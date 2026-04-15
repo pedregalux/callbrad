@@ -41,7 +41,7 @@ import Layout from '../layouts/Layout.astro';
       
       <div class="grid md:grid-cols-3 gap-8">
         <!-- RoPA Card -->
-        <a href="#ropa" class="group bg-white rounded-2xl p-8 border-2 border-[#2b2e83]/20 hover:border-[#2b2e83] transition-all hover:shadow-xl hover:shadow-[#2b2e83]/10">
+        <a href="/ropa" class="group bg-white rounded-2xl p-8 border-2 border-[#2b2e83]/20 hover:border-[#2b2e83] transition-all hover:shadow-xl hover:shadow-[#2b2e83]/10">
           <div class="w-14 h-14 bg-[#2b2e83] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
@@ -58,7 +58,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- Training Card -->
-        <a href="#training" class="group bg-white rounded-2xl p-8 border-2 border-[#ed60ed]/40 hover:border-[#ed60ed] transition-all hover:shadow-xl hover:shadow-[#ed60ed]/10">
+        <a href="/training" class="group bg-white rounded-2xl p-8 border-2 border-[#ed60ed]/40 hover:border-[#ed60ed] transition-all hover:shadow-xl hover:shadow-[#ed60ed]/10">
           <div class="w-14 h-14 bg-[#ed60ed] rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
@@ -75,7 +75,7 @@ import Layout from '../layouts/Layout.astro';
         </a>
 
         <!-- DPO Card -->
-        <a href="#dpo" class="group bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#2b2e83]/50 transition-all hover:shadow-xl hover:shadow-gray-200/50">
+        <a href="/dpo" class="group bg-white rounded-2xl p-8 border-2 border-gray-200 hover:border-[#2b2e83]/50 transition-all hover:shadow-xl hover:shadow-gray-200/50">
           <div class="w-14 h-14 bg-gray-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
@@ -95,7 +95,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- RoPA Section -->
-  <section id="ropa" class="py-20 lg:py-28 bg-gradient-to-b from-[#2b2e83]/5 to-white">
+  <section class="py-20 lg:py-28 bg-gradient-to-b from-[#2b2e83]/5 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div>
@@ -106,9 +106,7 @@ import Layout from '../layouts/Layout.astro';
             A RoPA system your team can actually use
           </h2>
           <p class="text-lg text-gray-600 mb-6">
-            This is a collaborative GDPR workspace built for real operational use. Instead of forcing your team into another heavy compliance platform, the system is designed to make records of processing activities, related assessments, review logic, and follow-up work easier to manage in a structured and practical way.
-          </p>
-          <p class="text-gray-600 mb-8">
+            A collaborative GDPR workspace built for real operational use. Instead of forcing your team into another heavy compliance platform, the system is designed to make records of processing activities, related assessments, review logic, and follow-up work easier to manage in a structured and practical way.
           </p>
           
           <div class="space-y-4 mb-8">
@@ -118,9 +116,7 @@ import Layout from '../layouts/Layout.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
                 </svg>
               </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Collaborative and easier to maintain than static spreadsheets</h4>
-              </div>
+              <p class="text-gray-700">Collaborative and easier to maintain than static spreadsheets</p>
             </div>
             <div class="flex items-center gap-4">
               <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
@@ -128,9 +124,7 @@ import Layout from '../layouts/Layout.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
                 </svg>
               </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Built around practical GDPR workflows rather than enterprise complexity</h4>
-              </div>
+              <p class="text-gray-700">Built around practical GDPR workflows rather than enterprise complexity</p>
             </div>
             <div class="flex items-center gap-4">
               <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
@@ -138,28 +132,16 @@ import Layout from '../layouts/Layout.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
                 </svg>
               </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Suitable for businesses that want structure without excessive software overhead</h4>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Expandable as the offer evolves</h4>
-              </div>
+              <p class="text-gray-700">Suitable for businesses that want structure without excessive software overhead</p>
             </div>
           </div>
 
-          <div class="p-6 bg-white rounded-xl border border-gray-200">
-            <p class="text-sm text-gray-600 mb-8">Pricing tailored to your organization size and needs.</p>
-            <a href="https://app.usemotion.com/meet/javier-kr40/30min-Call-Brad" class="inline-flex items-center justify-center w-[200px] px-4 py-3 bg-[#2b2e83] text-white font-semibold rounded-lg hover:bg-[#232465] transition-colors">
-              Get in Touch
-            </a>
-          </div>
+          <a href="/ropa" class="inline-flex items-center gap-2 px-6 py-3 bg-[#2b2e83] text-white font-semibold rounded-lg hover:bg-[#232465] transition-colors">
+            Ver más
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
         
         <div class="relative">
@@ -176,7 +158,7 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Training Section -->
-  <section id="training" class="py-20 lg:py-28 bg-white">
+  <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div class="relative order-2 lg:order-1">
@@ -197,9 +179,7 @@ import Layout from '../layouts/Layout.astro';
             GDPR training that lives where your team already works
           </h2>
           <p class="text-lg text-gray-600 mb-6">
-            This product gives businesses a practical way to train employees on GDPR without adding another separate training provider into the mix. The training is designed to be clear, easy to follow, and operationally useful, while still leaving room for structured learning and proof of completion.
-          </p>
-          <p class="text-gray-600 mb-8">
+            A practical way to train employees on GDPR without adding another separate training provider. Clear, easy to follow, and operationally useful with structured learning and proof of completion.
           </p>
           
           <div class="space-y-4 mb-8">
@@ -209,9 +189,7 @@ import Layout from '../layouts/Layout.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
                 </svg>
               </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Clear employee GDPR training with practical business relevance</h4>
-              </div>
+              <p class="text-gray-700">Clear employee GDPR training with practical business relevance</p>
             </div>
             <div class="flex items-center gap-4">
               <div class="w-6 h-6 bg-[#ed60ed] rounded-full flex items-center justify-center flex-shrink-0">
@@ -219,9 +197,7 @@ import Layout from '../layouts/Layout.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
                 </svg>
               </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Designed to be easy to deliver and easy to maintain</h4>
-              </div>
+              <p class="text-gray-700">Designed to be easy to deliver and easy to maintain</p>
             </div>
             <div class="flex items-center gap-4">
               <div class="w-6 h-6 bg-[#ed60ed] rounded-full flex items-center justify-center flex-shrink-0">
@@ -229,41 +205,30 @@ import Layout from '../layouts/Layout.astro';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
                 </svg>
               </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Can be presented as a product rather than just an add-on service</h4>
-              </div>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#ed60ed] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <div>
-                <h4 class="font-semibold text-gray-900">Space for final package and pricing details</h4>
-              </div>
+              <p class="text-gray-700">Proof of completion for audits</p>
             </div>
           </div>
 
-          <div class="p-6 bg-gray-50 rounded-xl border border-gray-200">
-            <p class="text-sm text-gray-600 mb-8">Pricing tailored to your team size and needs.</p>
-            <a href="https://app.usemotion.com/meet/javier-kr40/30min-Call-Brad" class="inline-flex items-center justify-center w-[200px] px-6 py-3 bg-[#ed60ed] text-white font-semibold rounded-lg hover:bg-[#d94dd9] transition-colors">
-              Get in Touch
-            </a>
-          </div>
+          <a href="/training" class="inline-flex items-center gap-2 px-6 py-3 bg-[#ed60ed] text-white font-semibold rounded-lg hover:bg-[#d94dd9] transition-colors">
+            Ver más
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- DPO Services Section -->
-  <section id="dpo" class="py-20 lg:py-28 bg-gray-50">
+  <section class="py-20 lg:py-28 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
           DPO support for businesses that need something more practical than ad hoc advice
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
+          Ongoing package-based support for businesses that need a designated and operationally useful DPO setup.
         </p>
       </div>
       
@@ -405,7 +370,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="bg-white rounded-2xl p-8 border border-gray-200">
         <h3 class="font-montserrat text-xl font-bold text-gray-900 mb-6">Add-ons</h3>
         <div class="grid sm:grid-cols-3 gap-6">
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-[#2b2e83]/10 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
@@ -417,7 +382,7 @@ import Layout from '../layouts/Layout.astro';
               <p class="text-lg font-bold text-[#2b2e83] mt-1">€99+/mo</p>
             </div>
           </div>
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-[#2b2e83]/10 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
@@ -429,7 +394,7 @@ import Layout from '../layouts/Layout.astro';
               <p class="text-lg font-bold text-[#2b2e83] mt-1">€49+/mo</p>
             </div>
           </div>
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div class="w-10 h-10 bg-[#ed60ed]/10 rounded-lg flex items-center justify-center flex-shrink-0">
               <svg class="w-5 h-5 text-[#ed60ed]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -442,6 +407,15 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="/dpo" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#2b2e83] text-[#2b2e83] font-semibold rounded-lg hover:bg-[#2b2e83] hover:text-white transition-colors">
+          Ver más
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
       </div>
     </div>
   </section>
@@ -848,7 +822,7 @@ import Layout from '../layouts/Layout.astro';
         </p>
         
         <div class="flex flex-col sm:flex-row justify-center gap-8">
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div class="w-12 h-12 bg-[#2b2e83]/10 rounded-xl flex items-center justify-center flex-shrink-0">
               <svg class="w-6 h-6 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
@@ -860,7 +834,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
           
-          <div class="flex items-start gap-4">
+          <div class="flex items-center gap-4">
             <div class="w-12 h-12 bg-[#2b2e83]/10 rounded-xl flex items-center justify-center flex-shrink-0">
               <svg class="w-6 h-6 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
