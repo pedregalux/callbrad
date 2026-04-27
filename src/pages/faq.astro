@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { bookingUrl } from '../data/site';
+
+const faqs = [
+  {
+    question: 'What is available now?',
+    answer:
+      'The Notion GDPR Workspace is available now, employee GDPR training is available in Notion and Google Workspace, and DPO support packages are available now.',
+  },
+  {
+    question: 'What is coming soon?',
+    answer:
+      'The full Confluence GDPR Workspace version and the full Google Workspace GDPR Workspace version are coming soon. This page should not imply those full workspace versions are already launched.',
+  },
+  {
+    question: 'Who is the offer for?',
+    answer:
+      'The offer is aimed at startups, SaaS companies, fintechs, SMEs, and other lean teams that need practical GDPR support without enterprise-software overhead.',
+  },
+  {
+    question: 'Is pricing already fixed for every offer?',
+    answer:
+      'DPO package pricing is fixed and visible. Workspace and training pricing still need final business detail, so those areas should stay flexible rather than guessing unsupported numbers.',
+  },
+  {
+    question: 'Can we use our existing tools?',
+    answer:
+      'Yes. The positioning is built around practical GDPR implementation inside tools teams already use, with the current workspace offer available in Notion first.',
+  },
+];
+---
+
+<Layout title="FAQ | Call Brad" description="Frequently asked questions about the Call Brad GDPR workspace, DPO services, and training offer.">
+  <section class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-br from-gray-50 via-white to-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
+          <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
+          <span class="text-sm font-medium text-[#2b2e83]">FAQ</span>
+        </div>
+        <h1 class="font-montserrat text-4xl sm:text-5xl font-bold text-[#2b2e83] mb-6">
+          Frequently asked questions
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Phase 1 keeps this page focused on offer structure and availability without adding unsupported legal or commercial detail.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        {faqs.map((item) => (
+          <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <h2 class="font-montserrat text-xl font-bold text-[#2b2e83] mb-3">{item.question}</h2>
+            <p class="text-gray-600 leading-relaxed">{item.answer}</p>
+          </div>
+        ))}
+      </div>
+
+      <!-- TODO: Expand this FAQ once final objections, pricing detail, and implementation specifics are approved. -->
+      <div class="mt-12 text-center">
+        <a href={bookingUrl} class="inline-flex items-center px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
+          Book an intro call
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

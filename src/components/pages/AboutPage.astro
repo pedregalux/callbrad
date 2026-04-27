@@ -1,0 +1,65 @@
+---
+import { bookingUrl } from '../../data/site';
+---
+
+<div class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-br from-white via-gray-50 to-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
+      <div class="flex flex-col items-center">
+        <div class="relative">
+          <img
+            src="/imgs_callbrad/javier.png"
+            alt="Call Brad founder portrait"
+            class="w-72 h-72 sm:w-80 sm:h-80 object-cover rounded-3xl shadow-xl"
+          />
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-[#ed60ed]/20 rounded-full blur-2xl"></div>
+        </div>
+        <div class="flex justify-center gap-4 mt-6 flex-wrap">
+          <img src="/imgs_callbrad/cipp2.png" alt="CIPP credential badge" class="w-12 h-12 object-contain" />
+          <img src="/imgs_callbrad/cipp3.png" alt="CIPP credential badge" class="w-12 h-12 object-contain" />
+          <img src="/imgs_callbrad/cipm.png" alt="CIPM credential badge" class="w-12 h-12 object-contain" />
+          <img src="/imgs_callbrad/cipt.png" alt="CIPT credential badge" class="w-12 h-12 object-contain" />
+          <img src="/imgs_callbrad/fip.png" alt="FIP credential badge" class="w-12 h-12 object-contain" />
+        </div>
+      </div>
+
+      <div>
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
+          <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
+          <span class="text-sm font-medium text-[#2b2e83]">About Call Brad</span>
+        </div>
+        <h1 class="font-montserrat text-4xl sm:text-5xl font-bold text-[#2b2e83] mb-6">
+          Practical privacy support built for teams that need GDPR to work in real operations
+        </h1>
+        <p class="text-lg text-gray-600 mb-6">
+          Call Brad focuses on operational GDPR for lean teams. The work is designed to help businesses move from scattered documents and isolated spreadsheets to a more usable setup with connected records, clearer ownership, training, and support.
+        </p>
+        <p class="text-gray-600 mb-8">
+          Founder credibility remains visible through IAPP certifications and privacy experience, but the offer is product-led: a GDPR workspace, employee training, and DPO services that are easier to inspect and easier to maintain.
+        </p>
+
+        <div class="grid sm:grid-cols-3 gap-4 mb-8">
+          <div class="rounded-2xl bg-white border border-gray-200 p-5">
+            <h2 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Credibility</h2>
+            <p class="text-sm text-gray-600">Privacy credentials and practical implementation experience.</p>
+          </div>
+          <div class="rounded-2xl bg-white border border-gray-200 p-5">
+            <h2 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Approach</h2>
+            <p class="text-sm text-gray-600">Operational support inside tools teams can actually keep using.</p>
+          </div>
+          <div class="rounded-2xl bg-white border border-gray-200 p-5">
+            <h2 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Focus</h2>
+            <p class="text-sm text-gray-600">Workspace, training, and DPO support for startups and SMEs.</p>
+          </div>
+        </div>
+
+        <a href={bookingUrl} class="inline-flex items-center px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
+          Book an intro call
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

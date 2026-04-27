@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { bookingUrl, contactEmail } from '../data/site';
+---
+
+<Layout title="Contact | Call Brad" description="Contact Call Brad to discuss GDPR workspace, DPO services, and GDPR training.">
+  <section class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-br from-white via-gray-50 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
+        <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
+        <span class="text-sm font-medium text-[#2b2e83]">Contact</span>
+      </div>
+      <h1 class="font-montserrat text-4xl sm:text-5xl font-bold text-[#2b2e83] mb-6">
+        Talk through your current GDPR setup
+      </h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+        Use the existing booking link for an intro call, or reach out by email if you want to discuss the workspace, training, or DPO services.
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-[#2b2e83]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h2 class="font-montserrat text-2xl font-bold text-[#2b2e83] mb-3">Email</h2>
+          <p class="text-gray-600 mb-5">For questions, scope discussions, or a written introduction.</p>
+          <a href={`mailto:${contactEmail}`} class="inline-flex items-center text-[#2b2e83] font-semibold hover:underline">
+            {contactEmail}
+          </a>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-[#ed60ed]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-[#ed60ed]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h2 class="font-montserrat text-2xl font-bold text-[#ed60ed] mb-3">Book an intro call</h2>
+          <p class="text-gray-600 mb-5">Use the existing booking link to discuss your current setup.</p>
+          <a href={bookingUrl} class="inline-flex items-center px-6 py-3 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
+            Book now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { bookingUrl } from '../data/site';
+---
+
+<Layout title="Pricing | Call Brad" description="Pricing for Call Brad DPO services, with workspace and training pricing placeholders pending final business detail.">
+  <section class="pt-32 pb-20 lg:pt-40 lg:pb-32 bg-gradient-to-br from-white via-gray-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-4xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
+          <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
+          <span class="text-sm font-medium text-[#2b2e83]">Pricing</span>
+        </div>
+        <h1 class="font-montserrat text-4xl sm:text-5xl font-bold text-[#2b2e83] mb-6">
+          Clear DPO pricing, with room to finalise workspace and training detail
+        </h1>
+        <p class="text-lg text-gray-600">
+          DPO services have approved package pricing. Workspace and training sections are intentionally structured to support final copy and pricing later without redesign.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-8 items-start">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h2 class="font-montserrat text-xl font-bold text-gray-900 mb-2">Essential DPO</h2>
+            <div class="text-4xl font-bold text-[#2b2e83] mb-5">199 EUR<span class="text-lg text-gray-500 font-medium">/mo.</span></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li>1 x 30 min monthly sync call</li>
+              <li>Yearly high-level GDPR gap analysis</li>
+              <li>Basic asynchronous support via email</li>
+              <li>Appointed DPO for 1 entity in 1 jurisdiction</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 border-2 border-[#2b2e83] shadow-lg shadow-[#2b2e83]/10">
+            <div class="inline-flex px-3 py-1 rounded-full bg-[#2b2e83] text-white text-xs font-semibold mb-4">Operational</div>
+            <h2 class="font-montserrat text-xl font-bold text-gray-900 mb-2">Operational DPO</h2>
+            <div class="text-4xl font-bold text-[#2b2e83] mb-5">599 EUR<span class="text-lg text-gray-500 font-medium">/mo.</span></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li>4 hours work/mo.</li>
+              <li>1 x 30 min monthly sync call</li>
+              <li>Yearly in-depth GDPR gap analysis</li>
+              <li>Basic asynchronous support via email and agreed business messaging channels</li>
+              <li>Appointed DPO for 1 entity in 1 jurisdiction</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h2 class="font-montserrat text-xl font-bold text-gray-900 mb-2">Growth DPO</h2>
+            <div class="text-4xl font-bold text-[#2b2e83] mb-5">999 EUR<span class="text-lg text-gray-500 font-medium">/mo.</span></div>
+            <ul class="space-y-3 text-sm text-gray-700">
+              <li>8 hours work/mo.</li>
+              <li>2 x 30 min monthly sync calls</li>
+              <li>Yearly in-depth GDPR gap analysis + prioritised action plan</li>
+              <li>Priority asynchronous support via email and agreed business messaging channels</li>
+              <li>Priority phone support for urgent privacy matters during business hours</li>
+              <li>Appointed DPO for 1 entity in 1 jurisdiction</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h2 class="font-montserrat text-xl font-bold text-[#2b2e83] mb-4">Add-ons</h2>
+            <ul class="space-y-4 text-sm text-gray-700">
+              <li><strong>Extra legal entity:</strong> 99+ EUR/mo.</li>
+              <li><strong>Extra jurisdiction registry:</strong> 49+ EUR/mo.</li>
+              <li><strong>Extra hourly rate:</strong> 150+ EUR/mo.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 border border-[#2b2e83]/20">
+            <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#2b2e83]/70 mb-3">GDPR Workspace</div>
+            <h2 class="font-montserrat text-2xl font-bold text-[#2b2e83] mb-3">Pricing placeholder ready</h2>
+            <p class="text-gray-600 mb-4">This section is intentionally ready for “Coming soon”, “From …”, or scoped pricing without redesign.</p>
+            <!-- TODO: Replace this placeholder with the final GDPR Workspace pricing once approved. -->
+            <p class="text-sm font-medium text-[#2b2e83]">Pricing: coming soon</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 border border-[#ed60ed]/20">
+            <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#ed60ed]/70 mb-3">GDPR Training</div>
+            <h2 class="font-montserrat text-2xl font-bold text-[#ed60ed] mb-3">Pricing placeholder ready</h2>
+            <p class="text-gray-600 mb-4">This section is intentionally ready for final training modules, delivery format, and pricing detail later.</p>
+            <!-- TODO: Replace this placeholder with the final GDPR Training pricing once approved. -->
+            <p class="text-sm font-medium text-[#ed60ed]">Pricing: coming soon</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href={bookingUrl} class="inline-flex items-center px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
+          Book an intro call
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
