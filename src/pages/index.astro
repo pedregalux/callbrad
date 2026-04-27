@@ -1,517 +1,153 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { bookingUrl, contactEmail } from '../data/site';
+import { bookingUrl } from '../data/site';
+import { dpoPackages, iappCredentials, trainingOffer, workspacePackages } from '../data/offers';
 ---
 
-<Layout title="Call Brad | Operational GDPR For Lean Teams" description="Operational GDPR for lean teams with a Notion GDPR Workspace, DPO services, and GDPR training.">
-  <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 bg-gradient-to-br from-white via-gray-50 to-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-5xl mx-auto text-center">
-        <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
-          <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
-          <span class="text-sm font-medium text-[#2b2e83]">Operational GDPR for lean teams</span>
-        </div>
-        <h1 class="font-montserrat text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2b2e83] leading-tight mb-6">
-          A practical GDPR workspace for teams that need privacy to work in real life
-        </h1>
-        <p class="text-lg sm:text-xl text-gray-600 mb-6 max-w-4xl mx-auto">
-          Call Brad helps startups, SaaS companies, fintechs, SMEs and lean teams build practical privacy operations. We set up connected GDPR records, clear ownership, review routines, task flows, training and ongoing support inside tools teams actually use.
-        </p>
-        <p class="text-base sm:text-lg text-gray-500 mb-4 max-w-4xl mx-auto">
-          Available now in Notion: the Notion GDPR Workspace. Employee GDPR training is already available in Notion and Google Workspace.
-        </p>
-        <p class="text-base sm:text-lg text-gray-500 mb-10 max-w-4xl mx-auto">
-          Full Confluence and Google Workspace workspace versions are coming soon.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-          <a href="/pricing" class="px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-all hover:shadow-lg hover:shadow-[#2b2e83]/25">
-            See packages
-          </a>
-          <a href={bookingUrl} class="px-8 py-4 bg-white text-[#2b2e83] font-semibold rounded-xl border-2 border-[#2b2e83] hover:bg-[#2b2e83]/5 transition-colors">
-            Book an intro call
-          </a>
-        </div>
-        <p class="text-sm text-gray-500">
-          Led by IAPP-certified privacy professionals holding CIPP/E, CIPP/US, CIPT, CIPM and FIP.
-        </p>
+<Layout title="Call Brad | Operational GDPR For Lean Teams" description="GDPR workspaces, training and DPO support for lean teams.">
+  <section class="pt-32 pb-18 lg:pt-40 lg:pb-22 bg-gradient-to-br from-white via-gray-50 to-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
+        <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
+        <span class="text-sm font-medium text-[#2b2e83]">GDPR workspaces, training and DPO support</span>
       </div>
-    </div>
-  </section>
-
-  <section class="pb-20 lg:pb-24 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="bg-white border border-gray-200 rounded-3xl shadow-sm p-8 sm:p-10 lg:p-12 text-center">
-        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-5">
-          Most GDPR problems are not caused by a missing policy. They are caused by a missing operating system.
-        </h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          Many teams already have policies, spreadsheets, scattered notes, and good intentions. The operational gap is elsewhere: disconnected records, unclear owners, no review routine, no follow-up flow, and training that sits apart from the work itself.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 items-start">
-        <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#ed60ed]/10 rounded-full mb-5">
-            <span class="text-sm font-semibold text-[#ed60ed]">What Call Brad does</span>
-          </div>
-          <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-5">
-            We turn GDPR from disconnected documents into a more practical working system
-          </h2>
-          <p class="text-lg text-gray-600 mb-6">
-            Call Brad helps lean teams move from static spreadsheets and forgotten documents to connected records, review logic, task flows, training, and ongoing support that fit real operations.
-          </p>
-        </div>
-        <div class="bg-gradient-to-br from-[#2b2e83] to-[#232465] text-white rounded-3xl p-8 sm:p-10">
-          <h3 class="font-montserrat text-2xl font-bold mb-5">What that looks like</h3>
-          <ul class="space-y-4 text-white/85">
-            <li>Connected GDPR records with clearer ownership and review dates.</li>
-            <li>Training that can sit inside tools teams already use.</li>
-            <li>DPO support packages with visible scope and pricing.</li>
-            <li>Practical implementation inside existing workflows, not a heavy software layer first.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
-          Available now and coming soon
-        </h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          The current launch offer is clear about what teams can buy now and what is still on the roadmap.
-        </p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-8">
-        <div class="bg-white border border-[#2b2e83]/20 rounded-3xl p-8">
-          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#2b2e83]/70 mb-3">Available now</div>
-          <ul class="space-y-4 text-gray-700">
-            <li>The Notion GDPR Workspace</li>
-            <li>Employee GDPR training in Notion</li>
-            <li>Employee GDPR training in Google Workspace</li>
-            <li>DPO support packages</li>
-            <li>RoPA and connected register setup</li>
-            <li>Custom GDPR implementation support inside existing tools</li>
-          </ul>
-        </div>
-
-        <div class="bg-white border border-[#ed60ed]/20 rounded-3xl p-8">
-          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#ed60ed]/70 mb-3">Coming soon</div>
-          <ul class="space-y-4 text-gray-700">
-            <li>Full Confluence GDPR Workspace version</li>
-            <li>Full Google Workspace GDPR Workspace version</li>
-          </ul>
-          <p class="text-sm text-gray-500 mt-6">
-            The full GDPR Workspace is currently available in Notion only.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
-          Core services
-        </h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-          The page is product-led. The GDPR Workspace and GDPR Training carry the strongest visual weight, with DPO Services remaining visible and credible.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <a href="/gdpr-workspace" class="group bg-white rounded-3xl p-8 border-2 border-[#2b2e83]/20 hover:border-[#2b2e83] transition-all hover:shadow-xl hover:shadow-[#2b2e83]/10">
-          <div class="w-14 h-14 bg-[#2b2e83] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
-            </svg>
-          </div>
-          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#2b2e83]/70 mb-3">Available now in Notion</div>
-          <h3 class="font-montserrat text-2xl font-bold text-[#2b2e83] mb-3">GDPR Workspace</h3>
-          <p class="text-gray-600 mb-4">
-            A practical GDPR workspace for connected records, ownership, review routines, and ongoing privacy operations.
-          </p>
-          <span class="inline-flex items-center text-[#2b2e83] font-medium">
-            Explore the workspace
-          </span>
-        </a>
-
-        <a href="/training" class="group bg-white rounded-3xl p-8 border-2 border-[#ed60ed]/40 hover:border-[#ed60ed] transition-all hover:shadow-xl hover:shadow-[#ed60ed]/10">
-          <div class="w-14 h-14 bg-[#ed60ed] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
-            </svg>
-          </div>
-          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#ed60ed]/70 mb-3">Available now in Notion and Google Workspace</div>
-          <h3 class="font-montserrat text-2xl font-bold text-[#ed60ed] mb-3">GDPR Training</h3>
-          <p class="text-gray-600 mb-4">
-            Employee GDPR training that can live where teams already work, with practical delivery and operational relevance.
-          </p>
-          <span class="inline-flex items-center text-[#ed60ed] font-medium">
-            See training
-          </span>
-        </a>
-
-        <a href="/dpo" class="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-[#2b2e83]/50 transition-all hover:shadow-xl hover:shadow-gray-200/60">
-          <div class="w-14 h-14 bg-gray-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0z"/>
-            </svg>
-          </div>
-          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 mb-3">Packages available now</div>
-          <h3 class="font-montserrat text-2xl font-bold text-gray-800 mb-3">DPO Services</h3>
-          <p class="text-gray-600 mb-4">
-            Visible package-based DPO support for teams that need practical ongoing privacy help and a designated structure.
-          </p>
-          <span class="inline-flex items-center text-gray-700 font-medium">
-            See DPO services
-          </span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-gradient-to-b from-[#2b2e83]/5 to-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        <div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#2b2e83]/10 rounded-full mb-6">
-            <span class="text-sm font-semibold text-[#2b2e83]">Featured product</span>
-          </div>
-          <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-6">
-            The Notion GDPR Workspace is available now
-          </h2>
-          <p class="text-lg text-gray-600 mb-6">
-            Our current workspace offer is available now in Notion. It is designed for teams that need connected GDPR records, clearer ownership, review routines, and practical follow-up work without buying heavy privacy software as a first move.
-          </p>
-          <div class="space-y-4 mb-8">
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <p class="text-gray-700">Starts with RoPA and connected register work.</p>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <p class="text-gray-700">Supports related tasks, ownership, and review routines around the records.</p>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <p class="text-gray-700">Leaves room for future screenshots, pricing and workflow detail without redesign.</p>
-            </div>
-          </div>
-          <a href="/gdpr-workspace" class="inline-flex items-center gap-2 px-6 py-3 bg-[#2b2e83] text-white font-semibold rounded-lg hover:bg-[#232465] transition-colors">
-            Explore the workspace
-          </a>
-        </div>
-
-        <div class="relative">
-          <div class="bg-white rounded-2xl shadow-2xl shadow-[#2b2e83]/10 p-6 border border-gray-100">
-            <div class="rounded-xl overflow-hidden">
-              <img src="/imgs_callbrad/gdpr1.jpg" alt="GDPR Workspace preview" class="w-full h-auto" />
-            </div>
-          </div>
-          <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-[#ed60ed]/20 rounded-full blur-3xl"></div>
-          <div class="absolute -top-4 -left-4 w-24 h-24 bg-[#2b2e83]/20 rounded-full blur-3xl"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-        <div class="relative order-2 lg:order-1">
-          <div class="bg-white rounded-2xl shadow-2xl shadow-[#ed60ed]/10 p-6 border border-gray-100">
-            <div class="rounded-xl overflow-hidden">
-              <img src="/imgs_callbrad/data211.jpg" alt="GDPR training preview" class="w-full h-auto" />
-            </div>
-          </div>
-          <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-[#2b2e83]/20 rounded-full blur-3xl"></div>
-          <div class="absolute -top-4 -right-4 w-24 h-24 bg-[#ed60ed]/20 rounded-full blur-3xl"></div>
-        </div>
-
-        <div class="order-1 lg:order-2">
-          <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#ed60ed]/10 rounded-full mb-6">
-            <span class="text-sm font-semibold text-[#ed60ed]">Featured product</span>
-          </div>
-          <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#ed60ed] mb-6">
-            GDPR training is already available in Notion and Google Workspace
-          </h2>
-          <p class="text-lg text-gray-600 mb-6">
-            Our employee GDPR training offer is already available in Notion and Google Workspace. It is designed to be practical, easy to deliver, and easier to keep close to the tools teams already use.
-          </p>
-          <div class="space-y-4 mb-8">
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#ed60ed] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <p class="text-gray-700">Available now in both Notion and Google Workspace.</p>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#ed60ed] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <p class="text-gray-700">Designed for practical business relevance rather than generic awareness copy.</p>
-            </div>
-            <div class="flex items-center gap-4">
-              <div class="w-6 h-6 bg-[#ed60ed] rounded-full flex items-center justify-center flex-shrink-0">
-                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
-                </svg>
-              </div>
-              <p class="text-gray-700">Structured so final module and pricing detail can be added later.</p>
-            </div>
-          </div>
-          <a href="/training" class="inline-flex items-center gap-2 px-6 py-3 bg-[#ed60ed] text-white font-semibold rounded-lg hover:bg-[#d94dd9] transition-colors">
-            See training
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-2 gap-12 items-start">
-        <div>
-          <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-6">
-            DPO services remain visible, serious, and secondary
-          </h2>
-          <p class="text-lg text-gray-600 mb-6">
-            Our DPO Services remain an important part of the offer, with fixed package pricing and clearer scope. They support teams that need ongoing operational GDPR help alongside the workspace and training offers.
-          </p>
-          <a href="/dpo" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#2b2e83] text-[#2b2e83] font-semibold rounded-lg hover:bg-[#2b2e83] hover:text-white transition-colors">
-            See DPO services
-          </a>
-        </div>
-
-        <div class="bg-white rounded-3xl p-8 border border-gray-200">
-          <div class="grid sm:grid-cols-3 gap-4">
-            <div class="rounded-2xl bg-gray-50 p-5">
-              <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Essential DPO</h3>
-              <p class="text-2xl font-bold text-[#2b2e83] mb-2">199 EUR/mo.</p>
-              <p class="text-sm text-gray-600">Lean monthly structure with a sync call, high-level gap analysis, and email support.</p>
-            </div>
-            <div class="rounded-2xl bg-gray-50 p-5 border border-[#2b2e83]/20">
-              <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Operational DPO</h3>
-              <p class="text-2xl font-bold text-[#2b2e83] mb-2">599 EUR/mo.</p>
-              <p class="text-sm text-gray-600">Monthly work allocation, deeper analysis, and agreed business messaging support.</p>
-            </div>
-            <div class="rounded-2xl bg-gray-50 p-5">
-              <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Growth DPO</h3>
-              <p class="text-2xl font-bold text-[#2b2e83] mb-2">999 EUR/mo.</p>
-              <p class="text-sm text-gray-600">More monthly work, priority support, and a prioritised action plan.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-[#2b2e83] text-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="font-montserrat text-3xl sm:text-4xl font-bold mb-4">
-        Why this approach is more practical
-      </h2>
-      <p class="text-white/80 max-w-3xl mx-auto mb-12">
-        Many businesses do not need expensive GDPR software as their first move. They need a working privacy system inside tools their team already uses, with clearer ownership and practical outputs they can maintain.
+      <h1 class="font-montserrat text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2b2e83] leading-tight mb-6">
+        Operational GDPR for lean teams
+      </h1>
+      <p class="text-lg sm:text-xl lg:text-2xl font-medium text-[#2b2e83] max-w-4xl mx-auto mb-8">
+        Your GDPR system, built where your team already works. No heavy privacy software. No scattered spreadsheets. No compliance theatre.
       </p>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div>
-          <h3 class="font-montserrat text-xl font-bold mb-3">Less bloat</h3>
-          <p class="text-white/70">A more practical starting point than heavy privacy platforms for lean teams.</p>
-        </div>
-        <div>
-          <h3 class="font-montserrat text-xl font-bold mb-3">More visible ownership</h3>
-          <p class="text-white/70">Connected records, owners, review dates and task flows instead of disconnected files.</p>
-        </div>
-        <div>
-          <h3 class="font-montserrat text-xl font-bold mb-3">Clearer commercial structure</h3>
-          <p class="text-white/70">Products and packages that are easier to inspect before getting on a call.</p>
+      <div class="max-w-5xl mx-auto mb-8">
+        <img
+          src="/imgs_callbrad/homepage-call-brad-pic-v2.svg"
+          alt="Call Brad GDPR workspace illustration"
+          class="w-full h-auto"
+          loading="eager"
+        />
+      </div>
+      <p class="text-sm sm:text-base text-gray-500 max-w-4xl mx-auto mb-10">
+        We help teams turn GDPR from disconnected documents and forgotten spreadsheets into a practical operating system with connected records, clear owners, review dates, task flows, training and useful outputs.
+      </p>
+      <div class="flex justify-center">
+        <a href={bookingUrl} class="px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors no-underline">
+          Book an intro call
+        </a>
+      </div>
+      <div class="mt-10">
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-gray-500 mb-4">
+          Built in the tools your team already uses
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-5">
+          <div class="flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm">
+            <img
+              src="https://logo.svgcdn.com/devicon/notion-original.svg"
+              alt="Notion"
+              class="h-8 w-auto"
+              loading="lazy"
+            />
+          </div>
+          <div class="flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm">
+            <img
+              src="https://logo.svgcdn.com/logos/atlassian.svg"
+              alt="Atlassian"
+              class="h-8 w-auto"
+              loading="lazy"
+            />
+          </div>
+          <div class="flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm">
+            <img
+              src="https://logo.svgcdn.com/devicon/google-original.svg"
+              alt="Google"
+              class="h-8 w-auto"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py-20 lg:py-28 bg-white">
+  <section class="py-18 lg:py-22 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
-        <div class="flex flex-col items-center">
-          <div class="relative">
-            <img src="/imgs_callbrad/javier.png" alt="Call Brad founder portrait" class="w-72 h-72 sm:w-80 sm:h-80 object-cover rounded-3xl shadow-xl" />
-            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-[#ed60ed]/20 rounded-full blur-2xl"></div>
-          </div>
-          <div class="flex justify-center gap-4 mt-6 flex-wrap">
-            <img src="/imgs_callbrad/cipp2.png" alt="CIPP credential badge" class="w-12 h-12 object-contain" />
-            <img src="/imgs_callbrad/cipp3.png" alt="CIPP credential badge" class="w-12 h-12 object-contain" />
-            <img src="/imgs_callbrad/cipm.png" alt="CIPM credential badge" class="w-12 h-12 object-contain" />
-            <img src="/imgs_callbrad/cipt.png" alt="CIPT credential badge" class="w-12 h-12 object-contain" />
-            <img src="/imgs_callbrad/fip.png" alt="FIP credential badge" class="w-12 h-12 object-contain" />
-          </div>
-        </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="/gdpr-workspace" class="group bg-white rounded-3xl p-8 border-2 border-[#2b2e83]/20 hover:border-[#2b2e83] transition-all hover:shadow-xl hover:shadow-[#2b2e83]/10 no-underline">
+          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#2b2e83]/70 mb-3">Notion GDPR Workspace</div>
+          <div class="font-montserrat text-3xl font-bold text-[#2b2e83] mb-3">{workspacePackages[0].shortPrice}</div>
+          <p class="text-gray-600 text-sm mb-4">Connected GDPR records, clearer ownership, rollout support, and practical setup in Notion.</p>
+          <p class="text-sm font-medium text-gray-700 mb-5">See Essential, Operational, and Growth side by side</p>
+          <span class="inline-flex items-center text-[#2b2e83] font-medium">See workspace packages</span>
+        </a>
 
-        <div>
-          <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-6">
-            Credibility without a consultancy-brochure tone
-          </h2>
-          <p class="text-lg text-gray-600 mb-6">
-            Call Brad keeps founder credibility visible through privacy credentials and practical experience, while keeping the commercial focus on the workspace, training, and DPO services.
-          </p>
-          <div class="flex flex-wrap gap-4">
-            <div class="px-4 py-2 bg-[#2b2e83]/5 rounded-lg">
-              <p class="text-sm font-semibold text-[#2b2e83]">IAPP credentials</p>
-            </div>
-            <div class="px-4 py-2 bg-[#ed60ed]/5 rounded-lg">
-              <p class="text-sm font-semibold text-[#ed60ed]">Privacy experience</p>
-            </div>
-            <div class="px-4 py-2 bg-gray-100 rounded-lg">
-              <p class="text-sm font-semibold text-gray-700">Operational focus</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        <a href="/dpo" class="group bg-white rounded-3xl p-8 border border-gray-200 hover:border-[#2b2e83]/50 transition-all hover:shadow-xl hover:shadow-gray-200/60 no-underline">
+          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-gray-500 mb-3">DPO Services</div>
+          <div class="font-montserrat text-3xl font-bold text-[#2b2e83] mb-3">{dpoPackages[0].shortPrice}</div>
+          <p class="text-gray-600 text-sm mb-4">Monthly DPO support with fixed pricing and visible scope.</p>
+          <p class="text-sm font-medium text-gray-700 mb-5">{dpoPackages[0].bestFor}</p>
+          <span class="inline-flex items-center text-[#2b2e83] font-medium">See DPO packages</span>
+        </a>
 
-  <section class="py-20 lg:py-28 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
-          Who it is for
-        </h2>
-      </div>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white border border-gray-200 rounded-2xl p-6">
-          <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Startups</h3>
-          <p class="text-sm text-gray-600">Teams that need structure before privacy work becomes fragmented.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-2xl p-6">
-          <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">SaaS</h3>
-          <p class="text-sm text-gray-600">Teams that need practical records, review logic and ongoing ownership.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-2xl p-6">
-          <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">Fintechs</h3>
-          <p class="text-sm text-gray-600">Teams that need GDPR support without enterprise-software overhead first.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-2xl p-6">
-          <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-2">SMEs</h3>
-          <p class="text-sm text-gray-600">Businesses that need a more maintainable operating setup for privacy work.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
-          How it works
-        </h2>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="text-center bg-gray-50 rounded-3xl p-8">
-          <div class="w-16 h-16 bg-[#2b2e83] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
-          <h3 class="font-montserrat text-lg font-bold text-gray-900 mb-2">Choose the right entry point</h3>
-          <p class="text-gray-600">Start with the workspace, training, DPO services, or a combination that fits current needs.</p>
-        </div>
-        <div class="text-center bg-gray-50 rounded-3xl p-8">
-          <div class="w-16 h-16 bg-[#2b2e83] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
-          <h3 class="font-montserrat text-lg font-bold text-gray-900 mb-2">Implement inside familiar tools</h3>
-          <p class="text-gray-600">Build the operational setup inside tools teams can actually keep using, starting with Notion now where relevant.</p>
-        </div>
-        <div class="text-center bg-gray-50 rounded-3xl p-8">
-          <div class="w-16 h-16 bg-[#2b2e83] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
-          <h3 class="font-montserrat text-lg font-bold text-gray-900 mb-2">Maintain with clearer ownership</h3>
-          <p class="text-gray-600">Use review routines, records, training and support to keep the setup operational over time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 lg:py-28 bg-gradient-to-br from-gray-50 via-white to-gray-50">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
-          FAQ preview
-        </h2>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white border border-gray-200 rounded-2xl p-6">
-          <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-3">What is available now?</h3>
-          <p class="text-gray-600">The Notion GDPR Workspace, GDPR training in Notion and Google Workspace, and DPO support packages are available now.</p>
-        </div>
-        <div class="bg-white border border-gray-200 rounded-2xl p-6">
-          <h3 class="font-montserrat text-lg font-bold text-[#2b2e83] mb-3">What is coming soon?</h3>
-          <p class="text-gray-600">Full Confluence and Google Workspace versions of the GDPR Workspace are coming soon.</p>
-        </div>
-      </div>
-
-      <div class="text-center mt-10">
-        <a href="/faq" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#2b2e83] text-[#2b2e83] font-semibold rounded-lg hover:bg-[#2b2e83] hover:text-white transition-colors">
-          See full FAQ
+        <a href="/training" class="group bg-white rounded-3xl p-8 border-2 border-[#ed60ed]/30 hover:border-[#ed60ed] transition-all hover:shadow-xl hover:shadow-[#ed60ed]/10 no-underline">
+          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#ed60ed]/70 mb-3">Employee GDPR Training</div>
+          <div class="font-montserrat text-3xl font-bold text-[#ed60ed] mb-3">{trainingOffer.price}</div>
+          <p class="text-gray-600 text-sm mb-4">Training available now in Notion and Google Workspace.</p>
+          <p class="text-sm font-medium text-gray-700 mb-5">{trainingOffer.bestFor}</p>
+          <span class="inline-flex items-center text-[#ed60ed] font-medium">See training</span>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="py-20 lg:py-28 bg-white">
+  <section class="py-18 lg:py-22 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-3">
+          Why Call Brad
+        </h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          A clearer middle ground between static templates and heavy software.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 rounded-3xl p-8">
+          <h3 class="font-montserrat text-xl font-bold text-[#2b2e83] mb-3">More useful than static templates</h3>
+          <p class="text-sm text-gray-600">Built around working records, ownership, and follow-up rather than isolated documents.</p>
+        </div>
+        <div class="bg-gray-50 rounded-3xl p-8">
+          <h3 class="font-montserrat text-xl font-bold text-[#2b2e83] mb-3">Lighter than enterprise privacy software</h3>
+          <p class="text-sm text-gray-600">Start with the structure teams need now before buying a heavier software layer.</p>
+        </div>
+        <div class="bg-gray-50 rounded-3xl p-8">
+          <h3 class="font-montserrat text-xl font-bold text-[#2b2e83] mb-3">More operational than ceremonial DPO support</h3>
+          <p class="text-sm text-gray-600">Visible packages, add-ons, and discounts instead of vague support promises.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-10 bg-[#2b2e83] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-white/15 bg-white/5 px-6 py-6 text-center lg:flex lg:items-center lg:justify-between lg:text-left">
+        <p class="font-semibold">IAPP-certified privacy professionals</p>
+        <p class="text-white/85">{iappCredentials.join(', ')}</p>
+        <p class="text-white/85">Built for lean teams that need GDPR to be maintained, not just documented</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-18 lg:py-22 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-6">
-        Need a more practical GDPR setup?
+      <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
+        See the offer in detail
       </h2>
-      <p class="text-lg text-gray-600 mb-12">
-        Whether you want to start with the Notion GDPR Workspace, discuss GDPR training, or review DPO support packages, use the existing contact paths below.
-      </p>
-
-      <div class="flex flex-col sm:flex-row justify-center gap-8">
-        <div class="flex flex-col items-center text-center">
-          <div class="w-12 h-12 bg-[#2b2e83]/10 rounded-xl flex items-center justify-center mb-3">
-            <svg class="w-6 h-6 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <a href={`mailto:${contactEmail}`} class="text-[#2b2e83] hover:underline">
-            <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
-          </a>
-        </div>
-
-        <div class="flex flex-col items-center text-center">
-          <div class="w-12 h-12 bg-[#2b2e83]/10 rounded-xl flex items-center justify-center mb-3">
-            <svg class="w-6 h-6 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-            </svg>
-          </div>
-          <a href={bookingUrl} class="text-[#2b2e83] hover:underline">
-            <h3 class="font-semibold text-gray-900 mb-1">Book an intro call</h3>
-          </a>
-        </div>
+      <p class="text-gray-600 mb-8">Explore the workspace, DPO services, or go straight to a call.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/gdpr-workspace" class="px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
+          Explore the workspace
+        </a>
+        <a href={bookingUrl} class="px-8 py-4 bg-white text-[#2b2e83] font-semibold rounded-xl border-2 border-[#2b2e83] hover:bg-[#2b2e83]/5 transition-colors">
+          Book an intro call
+        </a>
       </div>
     </div>
   </section>

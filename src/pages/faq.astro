@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { bookingUrl } from '../data/site';
-import { dpoAddOns, dpoPackages, trainingOffer, workspaceBuyerDpoDiscounts, workspacePackages } from '../data/offers';
+import { dpoAddOns, dpoPackages, trainingOffer, workspaceBuyerDpoDiscounts } from '../data/offers';
 
 const faqs = [
   {
@@ -22,7 +22,7 @@ const faqs = [
   {
     question: 'Is pricing already fixed for every offer?',
     answer:
-      `Yes. The workspace packages are ${workspacePackages.map((pkg) => `${pkg.name} ${pkg.price} ${pkg.billing}`).join(', ')}. DPO packages are ${dpoPackages.map((pkg) => `${pkg.name} ${pkg.price}${pkg.billing}`).join(', ')}. Training is ${trainingOffer.price}, with ${trainingOffer.minimum.toLowerCase()} and a ${trainingOffer.bulkDiscount.toLowerCase()}.`,
+      `Yes. Workspace package details are shown on the GDPR Workspace page. DPO packages are ${dpoPackages.map((pkg) => `${pkg.name} ${pkg.price}${pkg.billing}`).join(', ')}. Training is ${trainingOffer.price}, with ${trainingOffer.minimum.toLowerCase()} and a ${trainingOffer.bulkDiscount.toLowerCase()}.`,
   },
   {
     question: 'Can we use our existing tools?',

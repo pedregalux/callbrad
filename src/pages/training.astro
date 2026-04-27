@@ -16,7 +16,7 @@ import { iappCredentials, trainingOffer } from '../data/offers';
           GDPR training that lives where your team already works
         </h1>
         <p class="text-lg sm:text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
-          Call Brad offers employee GDPR training that is already available in Notion and Google Workspace. The aim is practical, operationally useful training that teams can roll out without bolting on another heavy system.
+          Call Brad provides practical GDPR training for employees. You pay once, add it to the tools your team already uses, and reuse it as needed. No other expensive platform or subscription.
         </p>
         <p class="text-base sm:text-lg text-gray-500 mb-10 max-w-3xl mx-auto">
           Supported by IAPP credentials including {iappCredentials.join(', ')}, while keeping the commercial structure simple and visible.
@@ -35,25 +35,107 @@ import { iappCredentials, trainingOffer } from '../data/offers';
 
   <section id="pricing" class="py-20 lg:py-28 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-[1fr_0.9fr] gap-8 items-start">
-        <div class="bg-white rounded-3xl p-8 border-2 border-[#ed60ed]/30 shadow-lg shadow-[#ed60ed]/10">
-          <div class="text-xs font-semibold uppercase tracking-[0.16em] text-[#ed60ed]/70 mb-3">Training pricing</div>
-          <h2 class="font-montserrat text-3xl font-bold text-[#ed60ed] mb-4">{trainingOffer.price}</h2>
-          <ul class="space-y-3 text-gray-700">
-            <li>{trainingOffer.minimum}</li>
-            <li>{trainingOffer.bulkDiscount}</li>
-            <li>Available now in Notion and Google Workspace</li>
-          </ul>
-        </div>
-        <div class="bg-gray-50 rounded-3xl p-8">
-          <h2 class="font-montserrat text-2xl font-bold text-[#2b2e83] mb-4">How the pricing works</h2>
-          <p class="text-gray-600 mb-4">
-            The training price is structured per employee, with a minimum cohort size and a large-group discount when participation reaches 100 or more.
-          </p>
-          <p class="text-gray-500">
-            The training offer is available now in Notion and Google Workspace. Full Confluence and Google Workspace workspace versions remain coming soon for the workspace product, not for training delivery.
-          </p>
-        </div>
+      <div class="text-center mb-12">
+        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-3">
+          Training pricing and delivery
+        </h2>
+        <p class="text-gray-600 max-w-3xl mx-auto">
+          A one-off employee training product with clear onboarding, support, extras, and rollout effort.
+        </p>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="min-w-full border-separate border-spacing-0 overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm">
+          <tbody class="align-top">
+            <tr>
+              <td class="w-[34%] border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                One-off License &amp; Onboarding Fee
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                <p>{trainingOffer.fullPrice} (existing + new employee)</p>
+                <p>{trainingOffer.minimum}</p>
+                <p>{trainingOffer.bulkDiscount}</p>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                Product functionality
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                <ul class="space-y-2">
+                  <li>Access to 25+ videos covering essential GDPR topics</li>
+                  <li>30 expert-designed questions</li>
+                  <li>Test results / completion log for all test-takers</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                Included in onboarding
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                <p>30 mins quick start &amp; customisation with expert</p>
+                <ul class="mt-2 space-y-2">
+                  <li>Setup in your environment in Notion or Google Workspace</li>
+                  <li>Short owner walkthrough</li>
+                  <li>Team introduction email template</li>
+                  <li>Basic launch guidance</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                Ongoing Technical Support
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                Email, next business day
+              </td>
+            </tr>
+            <tr class="bg-gray-100">
+              <td class="border-b border-gray-200 px-6 py-4 font-semibold uppercase tracking-[0.14em] text-gray-600">
+                Extras
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-4"></td>
+            </tr>
+            <tr>
+              <td class="border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                Customisation for separate teams
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                €100 per team
+              </td>
+            </tr>
+            <tr>
+              <td class="border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                <div>Immediate Implementation</div>
+                <div class="mt-1 font-normal text-gray-500">(start within 1 business day)</div>
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                Additional €300
+              </td>
+            </tr>
+            <tr>
+              <td class="border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                <div>Custom videos &amp; quiz sections</div>
+                <div class="mt-1 font-normal text-gray-500">(up to 2 mins, delivered within 2 weeks, no client IP rights)</div>
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                Additional €250 / topic
+              </td>
+            </tr>
+            <tr>
+              <td class="bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                Operational time commitments by Call Brad expert
+              </td>
+              <td class="border-l border-gray-200 px-6 py-5 text-gray-700">
+                <p class="font-semibold text-[#2b2e83]">Up to 1 hour</p>
+                <ul class="mt-2 space-y-2">
+                  <li>30 mins setup in Notion/Google</li>
+                  <li>30 mins owner walkthrough / email support</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
