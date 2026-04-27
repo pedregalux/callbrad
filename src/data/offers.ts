@@ -146,7 +146,7 @@ export const workspaceComparisonRows = [
   },
   {
     label: 'Workspace-buyer DPO discount',
-    values: ['10% off DPO Essential', '15% off DPO Operational', '20% off DPO Growth'],
+    values: ['10% off DPO Essential', '12% off DPO Operational', '15% off DPO Growth'],
   },
 ] as const;
 
@@ -255,8 +255,8 @@ export const dpoLimits = [
 
 export const workspaceBuyerDpoDiscounts = [
   { package: 'DPO Essential', discount: '10% off' },
-  { package: 'DPO Operational', discount: '15% off' },
-  { package: 'DPO Growth', discount: '20% off' },
+  { package: 'DPO Operational', discount: '12% off' },
+  { package: 'DPO Growth', discount: '15% off' },
 ] as const;
 
 export const trainingOffer = {

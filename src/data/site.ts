@@ -5,7 +5,6 @@ export const navLinks = [
   { href: '/gdpr-workspace', label: 'GDPR Workspace' },
   { href: '/dpo', label: 'DPO Services' },
   { href: '/training', label: 'GDPR Training' },
-  { href: '/about', label: 'About' },
   { href: '/faq', label: 'FAQ' },
 ] as const;
 
@@ -13,7 +12,6 @@ export const footerQuickLinks = [
   { href: '/gdpr-workspace', label: 'GDPR Workspace' },
   { href: '/dpo', label: 'DPO Services' },
   { href: '/training', label: 'GDPR Training' },
-  { href: '/about', label: 'About' },
   { href: '/faq', label: 'FAQ' },
   { href: '/contact', label: 'Contact' },
 ] as const;
