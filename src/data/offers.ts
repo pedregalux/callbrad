@@ -235,12 +235,12 @@ export const dpoPackageNotes = [
 export const dpoAddOns = [
   {
     name: 'Extra legal entity',
-    price: '€150/month',
+    price: '€100/month',
     summary: 'Add support for an extra legal entity.',
   },
   {
     name: 'Extra jurisdiction coverage',
-    price: '€100/month',
+    price: '€50/month',
     summary: 'Add support for an extra jurisdiction.',
   },
   {
