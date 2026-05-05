@@ -3,25 +3,25 @@ export const iappCredentials = ['CIPP/E', 'CIPP/US', 'CIPT', 'CIPM', 'FIP'] as c
 export const workspacePackages = [
   {
     name: 'Essential',
-    price: '€800',
+    price: '€1,000',
     billing: 'one-off',
-    shortPrice: 'from €800 one-off + VAT',
+    shortPrice: 'from €1,000 one-off + VAT',
     bestFor: 'Best for first structured setup',
     summary: 'Set up the core Notion GDPR Teamspace with connected records and a cleaner starting structure.',
   },
   {
     name: 'Operational',
-    price: '€1,600',
+    price: '€1,800',
     billing: 'one-off',
-    shortPrice: '€1,600 one-off + VAT',
+    shortPrice: '€1,800 one-off + VAT',
     bestFor: 'Best for active privacy operations',
     summary: 'Broader implementation for teams that need stronger ownership, review routines, and linked records.',
   },
   {
     name: 'Growth',
-    price: '€3,000',
+    price: '€3,200',
     billing: 'one-off',
-    shortPrice: '€3,000 one-off + VAT',
+    shortPrice: '€3,200 one-off + VAT',
     bestFor: 'Best for broader rollout',
     summary: 'Wider teamspace rollout for teams that need a more mature operating structure from the start.',
   },
@@ -30,7 +30,7 @@ export const workspacePackages = [
 export const workspaceDetailedPackages = [
   {
     name: 'Essential',
-    price: '€800',
+    price: '€1,000',
     billing: 'one-off',
     bestFor: 'Teams that need the GDPR basics sorted',
     typicalTime: 'Within a week',
@@ -62,7 +62,7 @@ export const workspaceDetailedPackages = [
   },
   {
     name: 'Operational',
-    price: '€1,600',
+    price: '€1,800',
     billing: 'one-off',
     bestFor: 'Teams that want GDPR to run with minimal chasing',
     typicalTime: 'Within 2 weeks',
@@ -94,7 +94,7 @@ export const workspaceDetailedPackages = [
   },
   {
     name: 'Growth',
-    price: '€3,000',
+    price: '€3,200',
     billing: 'one-off',
     bestFor: 'Teams that need stronger governance',
     typicalTime: 'Within 3 weeks',
@@ -115,12 +115,12 @@ export const workspaceDetailedPackages = [
     technicalSupport: 'Email and/or agreed business messaging channels (same business day)',
     immediateImplementation: 'Additional €1,500 + VAT',
     additionalExpertHours: '€200 / hour + VAT',
-    operationalCommitmentHours: '15 hours',
+    operationalCommitmentHours: '16 hours',
     operationalCommitmentItems: [
       '1h initial setup in Notion',
       '2h initial client session',
       '2h weekly review sessions',
-      '6h data migration and teamspace setup (including Brad AI)',
+      '7h data migration and teamspace setup (including Brad AI)',
       '2h Policy Hub setup',
       '2h email and chat support',
     ],
@@ -130,7 +130,7 @@ export const workspaceDetailedPackages = [
 export const workspaceComparisonRows = [
   {
     label: 'Price',
-    values: ['€800 one-off + VAT', '€1,600 one-off + VAT', '€3,000 one-off + VAT'],
+    values: ['€1,000 one-off + VAT', '€1,800 one-off + VAT', '€3,200 one-off + VAT'],
   },
   {
     label: 'Best for',
