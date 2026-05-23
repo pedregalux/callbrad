@@ -6,9 +6,55 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  locale?: string;
 }
 
-const { title, description = "Call Brad - Operational GDPR for lean teams." } = Astro.props;
+const { title, description = "Call Brad - Operational GDPR for lean teams.", locale = "" } = Astro.props;
+const isCl = locale === 'cl';
+const quickHeading = isCl ? 'Enlaces rápidos' : 'Quick Links';
+const legalHeading = isCl ? 'Avisos legales' : 'Legal';
+const privacyLabelLocal = isCl ? 'Aviso de privacidad' : 'Privacy Notice';
+const footerBlurbLocal = isCl
+  ? 'Protección de datos operativa para equipos ágiles. GDPR práctico, formación y soporte DPO sin sobrecarga de software.'
+  : footerBlurb;
+
+const footerLabelMap: Record<string, string> = {
+  'Data Protection OS': 'Protección de Datos',
+  'DPO Services': 'Servicios DPO',
+  'GDPR Training': 'Formación GDPR',
+  FAQ: 'Preguntas frecuentes',
+  Contact: 'Contacto',
+};
+
+let localizedFooterQuickLinks = footerQuickLinks.map((l) => ({
+  ...l,
+  label: isCl ? footerLabelMap[l.label] ?? l.label : l.label,
+}));
+
+if (isCl) {
+  localizedFooterQuickLinks = [
+    { href: '/cl', label: 'Data Protection OS' },
+    { href: '/cl', label: 'Servicios DPO' },
+    { href: '/cl', label: 'FAQ' },
+    { href: '/cl/contacto', label: 'Contacto' },
+  ];
+}
+
+let localizedNavLinks = navLinks.map((l) => ({
+  href: l.href,
+  label: l.label,
+}));
+
+if (isCl) {
+  localizedNavLinks = [
+    { href: '/cl', label: 'Data Protection OS' },
+    { href: '/cl', label: 'Servicios DPO' },
+    { href: '/cl', label: 'FAQ' },
+  ];
+}
+
+const copyrightText = isCl ? '© 2026 Call Brad. Todos los derechos reservados.' : '© 2026 Call Brad. All rights reserved.';
+const companyDetailsPrefix = isCl ? 'Detalles de la empresa:' : 'Company details:';
 ---
 
 <!doctype html>
@@ -34,10 +80,10 @@ const { title, description = "Call Brad - Operational GDPR for lean teams." } = 
             <img src="/imgs_callbrad/CallBradBasic.png" alt="Call Brad" class="h-14 md:h-16 w-auto" />
           </a>
           <div class="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
+            {localizedNavLinks.map((link) => (
               <a href={link.href} class="text-sm font-medium hover:text-[#2b2e83] transition-colors">{link.label}</a>
             ))}
-            <a href="/contact" class="px-4 py-2 bg-[#2b2e83] text-white text-sm font-medium rounded-lg hover:bg-[#232465] transition-colors">Contact</a>
+            <a href={isCl ? '/cl/contacto' : '/contact'} class="px-4 py-2 bg-[#2b2e83] text-white text-sm font-medium rounded-lg hover:bg-[#232465] transition-colors">{isCl ? 'Contacto' : 'Contact'}</a>
           </div>
           <button @click="mobileMenu = !mobileMenu" class="md:hidden p-2" aria-label="Toggle menu">
             <svg x-show="!mobileMenu" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,10 +98,10 @@ const { title, description = "Call Brad - Operational GDPR for lean teams." } = 
       <!-- Mobile Menu -->
       <div x-show="mobileMenu" x-cloak x-transition class="md:hidden bg-white border-t border-gray-100">
         <div class="px-4 py-4 space-y-3">
-          {navLinks.map((link) => (
+          {localizedNavLinks.map((link) => (
             <a href={link.href} class="block py-2 text-sm font-medium hover:text-[#2b2e83]" @click="mobileMenu = false">{link.label}</a>
           ))}
-          <a href="/contact" class="block py-2 text-sm font-medium text-[#2b2e83]" @click="mobileMenu = false">Contact</a>
+          <a href={isCl ? '/cl/contacto' : '/contact'} class="block py-2 text-sm font-medium text-[#2b2e83]" @click="mobileMenu = false">{isCl ? 'Contacto' : 'Contact'}</a>
         </div>
       </div>
     </nav>
@@ -74,31 +120,34 @@ const { title, description = "Call Brad - Operational GDPR for lean teams." } = 
               <img src="/imgs_callbrad/CallBradBasic.png" alt="Call Brad" class="h-14 md:h-16 w-auto" />
             </a>
             <p class="text-white/70 mt-4 max-w-md">
-              {footerBlurb}
+              {footerBlurbLocal}
             </p>
           </div>
           <div>
-            <h4 class="font-semibold mb-4">Quick Links</h4>
+            <h4 class="font-semibold mb-4">{quickHeading}</h4>
             <ul class="space-y-2 text-white/70">
-              {footerQuickLinks.map((link) => (
+              {localizedFooterQuickLinks.map((link) => (
                 <li><a href={link.href} class="hover:text-white transition-colors">{link.label}</a></li>
               ))}
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold mb-4">Legal</h4>
+            <h4 class="font-semibold mb-4">{legalHeading}</h4>
             <ul class="space-y-2 text-white/70">
-              <li><a href="/privacy" class="hover:text-white transition-colors">Privacy Notice</a></li>
+              <li><a href="/privacy" class="hover:text-white transition-colors">{privacyLabelLocal}</a></li>
             </ul>
+            <a href={isCl ? '/' : '/cl'} class="mt-6 inline-flex mx-auto md:mx-0 items-center justify-center rounded-lg bg-white px-8 py-3 text-sm font-semibold text-[#2b2e83] shadow-md transition hover:bg-gray-100">
+              {isCl ? 'Volver a Call Brad EU 🇪🇺' : 'Go to Call Brad Chile 🇨🇱'}
+            </a>
           </div>
         </div>
-        
+
         <div class="pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4">
           <p class="text-white/50 text-sm">
-            &copy; 2026 Call Brad. All rights reserved.
+            {copyrightText}
           </p>
           <p class="text-white/50 text-sm">
-            Company details: {companyDetails}
+            {companyDetailsPrefix} {companyDetails}
           </p>
         </div>
       </div>

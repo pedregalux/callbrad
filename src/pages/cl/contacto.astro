@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { bookingUrl, contactEmail } from '../../data/site';
+---
+
+<Layout title="Contacto | Call Brad" description="Contacta a Call Brad Chile para recibir información sobre servicios operativos de protección de datos conforme a la Ley 21.719." locale="cl">
+  <section class="pt-24 pb-14 lg:pt-32 lg:pb-18 bg-gradient-to-br from-white via-gray-50 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
+        <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
+        <span class="text-sm font-medium text-[#2b2e83]">Contacto</span>
+      </div>
+
+      <h1 class="font-montserrat text-4xl sm:text-5xl font-bold text-[#2b2e83] mb-6">
+        Habla con Call Brad en español
+      </h1>
+
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10 leading-8">
+        Escríbenos si necesitas apoyo para preparar tu empresa frente a la Ley 21.719 y convertir la protección de datos en un sistema operativo que tu equipo pueda usar día a día.
+      </p>
+
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-[#2b2e83]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h2 class="font-montserrat text-2xl font-bold text-[#2b2e83] mb-3">Correo electrónico</h2>
+          <p class="text-gray-600 mb-5">
+            Para preguntas, alcance de servicios o coordinar una primer consulta en español.
+          </p>
+          <a href={`mailto:${contactEmail}`} class="inline-flex items-center text-[#2b2e83] font-semibold hover:underline">
+            {contactEmail}
+          </a>
+        </div>
+
+        <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
+          <div class="w-14 h-14 bg-[#ed60ed]/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-[#ed60ed]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h2 class="font-montserrat text-2xl font-bold text-[#ed60ed] mb-3">Reserva una llamada</h2>
+          <p class="text-gray-600 mb-5">
+            Agenda una reunión para hablar de tu equipo, tu plan de migración a la nueva ley y los próximos pasos.
+          </p>
+          <a href={bookingUrl} class="inline-flex items-center px-6 py-3 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
+            Reservar ahora
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</Layout>

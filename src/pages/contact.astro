@@ -2,23 +2,46 @@
 import Layout from '../layouts/Layout.astro';
 import { bookingUrl, contactEmail } from '../data/site';
 import { iappCredentials, trainingOffer } from '../data/offers';
+
+const url = new URL(Astro.request.url);
+const locale = url.searchParams.get('locale') ?? '';
+const isCl = locale === 'cl';
+const title = isCl ? 'Contacto | Call Brad' : 'Contact | Call Brad';
+const description = isCl
+  ? 'Contacta a Call Brad para hablar de servicios de datos operativos en Chile.'
+  : 'Contact Call Brad to discuss the Data Protection OS, DPO services, and GDPR training.';
+const heroLabel = isCl ? 'Contacto' : 'Contact';
+const heroTitle = isCl ? 'Habla con Call Brad en español' : 'Talk through your current GDPR setup';
+const heroText = isCl
+  ? 'Escríbenos para conocer cómo podemos ayudarte con tu cumplimiento de protección de datos en Chile.'
+  : 'Use the existing booking link for an intro call, or reach out by email if you want to discuss the Notion Data Protection OS, DPO Services, or GDPR Training.';
+const emailLabel = isCl ? 'Correo electrónico' : 'Email';
+const emailText = isCl
+  ? 'Para preguntas o una primera consulta en español.'
+  : 'For questions, scope discussions, or a written introduction.';
+const callTitle = isCl ? 'Reserva una llamada introductoria' : 'Book an intro call';
+const callText = isCl
+  ? 'Reserva una llamada para hablar de tu equipo y necesidades.'
+  : 'Use the existing booking link to discuss your current setup.';
 ---
 
-<Layout title="Contact | Call Brad" description="Contact Call Brad to discuss the Data Protection OS, DPO services, and GDPR training.">
+<Layout title={title} description={description} locale={locale}>
   <section class="pt-24 pb-14 lg:pt-32 lg:pb-18 bg-gradient-to-br from-white via-gray-50 to-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-2 bg-[#2b2e83]/5 rounded-full mb-6">
         <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
-        <span class="text-sm font-medium text-[#2b2e83]">Contact</span>
+        <span class="text-sm font-medium text-[#2b2e83]">{heroLabel}</span>
       </div>
       <h1 class="font-montserrat text-4xl sm:text-5xl font-bold text-[#2b2e83] mb-6">
-        Talk through your current GDPR setup
+        {heroTitle}
       </h1>
       <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-        Use the existing booking link for an intro call, or reach out by email if you want to discuss the Notion Data Protection OS, DPO Services, or GDPR Training.
+        {heroText}
       </p>
       <p class="text-base text-gray-500 max-w-3xl mx-auto mb-12">
-        Data Protection OS package details are shown on the Data Protection OS page, training starts at {trainingOffer.price}, and IAPP credentials include {iappCredentials.join(', ')}.
+        {isCl
+          ? 'Si quieres recibir información cuando lancemos Call Brad Chile, contáctanos por email o reserva una llamada introductoria.'
+          : `Data Protection OS package details are shown on the Data Protection OS page, training starts at ${trainingOffer.price}, and IAPP credentials include ${iappCredentials.join(', ')}.`}
       </p>
 
       <div class="grid sm:grid-cols-2 gap-6">
@@ -28,8 +51,8 @@ import { iappCredentials, trainingOffer } from '../data/offers';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
           </div>
-          <h2 class="font-montserrat text-2xl font-bold text-[#2b2e83] mb-3">Email</h2>
-          <p class="text-gray-600 mb-5">For questions, scope discussions, or a written introduction.</p>
+          <h2 class="font-montserrat text-2xl font-bold text-[#2b2e83] mb-3">{emailLabel}</h2>
+          <p class="text-gray-600 mb-5">{emailText}</p>
           <a href={`mailto:${contactEmail}`} class="inline-flex items-center text-[#2b2e83] font-semibold hover:underline">
             {contactEmail}
           </a>
@@ -41,10 +64,10 @@ import { iappCredentials, trainingOffer } from '../data/offers';
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
           </div>
-          <h2 class="font-montserrat text-2xl font-bold text-[#ed60ed] mb-3">Book an intro call</h2>
-          <p class="text-gray-600 mb-5">Use the existing booking link to discuss your current setup.</p>
+          <h2 class="font-montserrat text-2xl font-bold text-[#ed60ed] mb-3">{callTitle}</h2>
+          <p class="text-gray-600 mb-5">{callText}</p>
           <a href={bookingUrl} class="inline-flex items-center px-6 py-3 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
-            Book now
+            {isCl ? 'Reservar ahora' : 'Book now'}
           </a>
         </div>
       </div>
