@@ -9,7 +9,7 @@ export const testimonials = [
     role: 'In-house legal counsel',
     company: 'Salv',
     country: 'Estonia',
-    logo: 'https://cdn.brandfetch.io/id03RCtt4d/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772493351379',
+    logo: '/imgs_callbrad/salv-logo.svg',
   },
   {
     quote:
@@ -18,7 +18,7 @@ export const testimonials = [
     role: 'Group Privacy and Legal Manager',
     company: 'Nomentia',
     country: 'Finland',
-    logo: 'https://cdn.brandfetch.io/idj3f7UxTY/w/204/h/204/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1772520803081',
+    logo: '/imgs_callbrad/nomentia-logo.svg',
   },
 ] as const;
 

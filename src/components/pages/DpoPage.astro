@@ -1,0 +1,215 @@
+---
+import { bookingUrl } from '../../data/site';
+import { dpoAddOns, dpoPackageNotes, dpoPackages } from '../../data/offers';
+import { dpoAddOnsEsCl, dpoPackageNotesEsCl, dpoPackagesEsCl } from '../../data/offers.es-cl';
+import { dpoCopyEsCl } from '../../data/page-copy.es-cl';
+
+interface Props {
+  locale?: 'en' | 'es-CL';
+}
+
+const { locale = 'en' } = Astro.props;
+const isEsCl = locale === 'es-CL';
+const packages = isEsCl ? dpoPackagesEsCl : dpoPackages;
+const packageNotes = isEsCl ? dpoPackageNotesEsCl : dpoPackageNotes;
+const addOns = isEsCl ? dpoAddOnsEsCl : dpoAddOns;
+const taxLabel = isEsCl ? 'CLP + IVA' : '+ VAT';
+const t = (value: string) => (isEsCl ? dpoCopyEsCl[value] ?? value : value);
+const credentialAlt = (credential: string) =>
+  isEsCl ? `Credencial ${credential}` : `${credential} credential`;
+---
+
+  <section class="pt-20 pb-12 lg:pt-24 lg:pb-14 bg-gradient-to-br from-gray-100 via-white to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-full mb-4">
+          <span class="w-2 h-2 bg-[#2b2e83] rounded-full"></span>
+          <span class="text-sm font-semibold text-gray-700">{t('DPO Services')}</span>
+        </div>
+        <h1 class="font-montserrat text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2b2e83] leading-tight mb-4">
+          {t('DPO support for teams that need a clear structure')}
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 mb-4 max-w-3xl mx-auto">
+          {t('Package-based DPO support for lean teams, with clear pricing, defined scope, and practical ongoing support.')}
+        </p>
+        <p class="text-base sm:text-lg text-gray-500 mb-4 max-w-3xl mx-auto">
+          {t('All our professionals have IAPP credentials.')}
+        </p>
+        <div class="mb-7 flex flex-wrap items-center justify-center gap-3">
+          <img src="/imgs_callbrad/cipp2.png" alt={credentialAlt('CIPP/E')} class="h-12 w-auto" loading="lazy" />
+          <img src="/imgs_callbrad/cipp3.png" alt={credentialAlt('CIPP/US')} class="h-12 w-auto" loading="lazy" />
+          <img src="/imgs_callbrad/cipt.png" alt={credentialAlt('CIPT')} class="h-12 w-auto" loading="lazy" />
+          <img src="/imgs_callbrad/cipm.png" alt={credentialAlt('CIPM')} class="h-12 w-auto" loading="lazy" />
+          <img src="/imgs_callbrad/fip.png" alt={credentialAlt('FIP')} class="h-12 w-auto" loading="lazy" />
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#packages" class="px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-all hover:shadow-lg hover:shadow-[#2b2e83]/25">
+            {t('See packages')}
+          </a>
+          <a href={bookingUrl} class="px-8 py-4 bg-white text-[#2b2e83] font-semibold rounded-xl border-2 border-[#2b2e83] hover:bg-[#2b2e83]/5 transition-colors">
+            {t('Book an intro call')}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages" class="py-14 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-4">
+          {t('Choose the right DPO package')}
+        </h2>
+        <p class="text-gray-600 max-w-3xl mx-auto">
+          {t('Three monthly packages designed for lean teams that need practical GDPR oversight, visible scope, and clearer support expectations.')}
+        </p>
+      </div>
+
+      <div class="grid auto-rows-fr items-stretch gap-6 md:grid-cols-3">
+        {packages.map((pkg, index) => (
+          <div class:list={['bg-white rounded-2xl p-8 transition-all relative flex flex-col', index === 1 ? 'border-2 border-[#2b2e83] shadow-lg shadow-[#2b2e83]/10' : 'border border-gray-200 hover:border-[#2b2e83]/30']}>
+            {index === 1 && (
+              <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#2b2e83] text-white text-sm font-semibold rounded-full">
+                {t('Most popular')}
+              </div>
+            )}
+            <h3 class="mb-2 text-center font-montserrat text-xl font-bold text-gray-900">{pkg.name} DPO</h3>
+            <p class="text-gray-600 text-sm mb-6">{pkg.summary}</p>
+            <div class="mb-6 flex items-baseline justify-center gap-1">
+              <span class="text-4xl font-bold text-[#2b2e83]">{pkg.price}</span>
+              <span class="text-gray-500">{pkg.billing}</span>
+              <span class="text-sm font-semibold text-gray-500">{taxLabel}</span>
+            </div>
+            <ul class="space-y-3">
+              {pkg.points.map((point) => (
+                <li class="flex items-start gap-2 text-sm leading-relaxed text-gray-700">
+                  <svg class="mt-0.5 h-5 w-5 flex-shrink-0 text-[#2b2e83]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                  </svg>
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <div class="mx-auto mt-6 max-w-5xl px-2">
+        <div class="space-y-1 text-xs leading-relaxed text-gray-500">
+          {packageNotes.map((note) => (
+            <p>{note}</p>
+          ))}
+        </div>
+      </div>
+
+      <div class="mt-10 flex justify-center">
+        <a href={bookingUrl} class="px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-all hover:shadow-lg hover:shadow-[#2b2e83]/25">
+          {t('Book an intro call')}
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-14 lg:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-6">
+            {t('Why teams choose this DPO structure')}
+          </h2>
+          <p class="text-lg text-gray-600 mb-6">
+            {t('The aim is not to turn DPO work into vague consultancy time. The aim is to give teams a clearer monthly structure, practical support, and a visible way to combine operational privacy work with the rest of the Call Brad offer.')}
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <p class="text-gray-700">{t('A designated support structure with visible scope and fixed package pricing')}</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <p class="text-gray-700">{t('Practical monthly support that sits alongside the Data Protection OS and training offers')}</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-[#2b2e83] rounded-full flex items-center justify-center flex-shrink-0">
+                <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                </svg>
+              </div>
+              <p class="text-gray-700">{t('IAPP-backed credibility from certified privacy professionals')}</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <h3 class="font-montserrat text-xl font-bold text-[#2b2e83] mb-4">{t('How it pairs with the Data Protection OS')}</h3>
+          <p class="text-gray-600 mb-4">
+            {t('Teams that buy a Data Protection OS package can reduce first-year DPO package pricing, while keeping add-ons and urgent support outside the discount.')}
+          </p>
+          <a href={bookingUrl} class="inline-flex items-center px-6 py-3 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-colors">
+            {t('Book an intro call')}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 lg:py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border border-gray-200 bg-gray-50/70 p-6 lg:p-8">
+        <div class="mb-5">
+          <h3 class="font-montserrat text-lg font-bold text-gray-900">{t('Add-ons and pricing notes')}</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            {t('Extra coverage and pricing notes for teams that need more than the base package structure.')}
+          </p>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-gray-200 bg-white">
+          <table class="min-w-full divide-y divide-gray-200 text-left">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-gray-500">{t('Item')}</th>
+                <th class="px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-gray-500">{t('Details')}</th>
+                <th class="w-48 px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-gray-500">{t('Price')}</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              {addOns.map((addon) => (
+                <tr>
+                  <td class="px-4 py-4 font-semibold text-gray-900">{addon.name}</td>
+                  <td class="px-4 py-4 text-sm text-gray-600">{addon.summary}</td>
+                  <td class="whitespace-nowrap px-4 py-4 text-sm font-semibold text-[#2b2e83]">{addon.price}</td>
+                </tr>
+              ))}
+              <tr>
+                <td class="px-4 py-4 font-semibold text-gray-900">{t('Data Protection OS buyer discount')}</td>
+                <td class="px-4 py-4 text-sm text-gray-600">{t('When you buy the Data Protection OS, DPO Packages can be reduced by up to 15% for the first 3 months.')}</td>
+                <td class="whitespace-nowrap px-4 py-4 text-sm font-semibold text-[#2b2e83]">{t('Up to 15% off')}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 lg:py-20 bg-gradient-to-b from-gray-100 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-montserrat text-3xl sm:text-4xl font-bold text-[#2b2e83] mb-6">
+        {t('Ready to put a more structured DPO setup in place?')}
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        {t('Use the existing booking link if you want to compare packages, add-ons, and Data Protection OS buyer discounts.')}
+      </p>
+      <a href={bookingUrl} class="px-8 py-4 bg-[#2b2e83] text-white font-semibold rounded-xl hover:bg-[#232465] transition-all hover:shadow-lg hover:shadow-[#2b2e83]/25">
+        {t('Book an intro call')}
+      </a>
+    </div>
+  </section>
