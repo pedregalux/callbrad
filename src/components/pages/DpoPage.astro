@@ -13,7 +13,7 @@ const isEsCl = locale === 'es-CL';
 const packages = isEsCl ? dpoPackagesEsCl : dpoPackages;
 const packageNotes = isEsCl ? dpoPackageNotesEsCl : dpoPackageNotes;
 const addOns = isEsCl ? dpoAddOnsEsCl : dpoAddOns;
-const taxLabel = isEsCl ? 'CLP + IVA' : '+ VAT';
+const taxLabel = isEsCl ? '+ IVA' : '+ VAT';
 const t = (value: string) => (isEsCl ? dpoCopyEsCl[value] ?? value : value);
 const credentialAlt = (credential: string) =>
   isEsCl ? `Credencial ${credential}` : `${credential} credential`;
@@ -193,6 +193,15 @@ const credentialAlt = (credential: string) =>
                 <td class="px-4 py-4 text-sm text-gray-600">{t('When you buy the Data Protection OS, DPO Packages can be reduced by up to 15% for the first 3 months.')}</td>
                 <td class="whitespace-nowrap px-4 py-4 text-sm font-semibold text-[#2b2e83]">{t('Up to 15% off')}</td>
               </tr>
+              {isEsCl && (
+                <tr>
+                  <td class="px-4 py-4 font-semibold text-gray-900">{t('EU DPO service client discount')}</td>
+                  <td class="px-4 py-4 text-sm text-gray-600">{t('Clients who purchase our EU DPO service for GDPR compliance may also receive a discount. Contact us for details.')}</td>
+                  <td class="whitespace-nowrap px-4 py-4 text-sm font-semibold text-[#2b2e83]">
+                    <a href="/cl/contacto" class="hover:underline">{t('Contact us for the discount')}</a>
+                  </td>
+                </tr>
+              )}
             </tbody>
           </table>
         </div>

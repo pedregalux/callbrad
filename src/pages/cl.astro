@@ -1,75 +1,235 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { bookingUrl } from '../data/site';
 ---
 
-<Layout title="Brad Chile | Call Brad" description="Soluciones de Call Brad para empresas en Chile y América Latina." locale="cl">
-  <div class="pt-24 pb-14 lg:pt-32 lg:pb-18">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-      <div class="space-y-8">
-        <h1 class="font-montserrat text-4xl sm:text-5xl font-bold text-[#2b2e83] leading-tight">
-          Call Brad llega a Chile con protección de datos operativa para equipos reales
-        </h1>
-
-        <div class="space-y-6 text-gray-700 text-lg leading-8">
-          <p>
-            El 1 de diciembre de 2026 entrará en vigor la <strong class="font-semibold text-slate-900">Ley N° 21.719</strong>, que moderniza la Ley N° 19.628, fortalece los derechos de los titulares y crea la Agencia de Protección de Datos Personales.
-          </p>
-          <p>
-            En Call Brad ayudamos a las empresas a gestionar el cumplimiento de la ley chilena sobre protección de datos de forma <strong class="font-semibold text-slate-900">práctica, ordenada y útil</strong> para el trabajo diario. No trabajamos con documentos aislados ni con compliance de papel: creamos sistemas que los equipos pueden usar, mantener y demostrar.
-          </p>
-          <p>
-            Nuestro equipo está formado por profesionales educados en universidades líderes en Chile y Europa, con formación jurídica, regulatoria y tecnológica, y con certificaciones especializadas en protección de datos y privacidad. Combinamos <strong class="font-semibold text-slate-900">conocimiento local, experiencia europea y visión operativa</strong> del cumplimiento.
-          </p>
-          <p>
-            Ahora iniciamos servicios en Chile para apoyar a empresas que necesitan prepararse con tiempo para la nueva ley.
-          </p>
-        </div>
+<Layout
+  title="Call Brad Chile | Protección de datos operativa"
+  description="Data Protection OS y servicios DPO para preparar y operar el cumplimiento de la nueva Ley de Protección de Datos Personales en Chile."
+  locale="cl"
+>
+  <section class="bg-gradient-to-br from-white via-gray-50 to-white pt-20 pb-12 lg:pt-24 lg:pb-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="mb-4 inline-flex items-center gap-2 rounded-full bg-[#2b2e83]/5 px-4 py-2">
+        <span class="h-2 w-2 rounded-full bg-[#ed60ed]"></span>
+        <span class="text-sm font-medium text-[#2b2e83]">Protección de datos operativa para Chile</span>
       </div>
 
-      <div class="rounded-[2rem] border border-slate-200 bg-slate-50 p-8 shadow-sm">
-        <div class="flex items-center justify-between gap-4 mb-6">
-          <div>
-            <p class="text-sm uppercase tracking-[0.22em] text-[#2b2e83] font-semibold">Ofrecemos</p>
-            <h2 class="font-montserrat text-3xl font-semibold text-[#2b2e83] mt-3">Servicios diseñados para el cumplimiento operativo</h2>
+      <h1 class="mx-auto mb-4 max-w-5xl font-montserrat text-4xl font-bold leading-tight text-[#2b2e83] sm:text-5xl lg:text-6xl">
+        Protección de datos operativa para equipos en Chile
+      </h1>
+      <p class="mx-auto mb-7 max-w-4xl text-lg font-medium text-[#2b2e83] sm:text-xl lg:text-2xl">
+        Prepara y opera el cumplimiento de la nueva Ley de Protección de Datos Personales con un sistema práctico, responsabilidades claras y soporte DPO de alcance definido.
+      </p>
+
+      <div class="mb-6 flex flex-col justify-center gap-3 sm:flex-row">
+        <a href={bookingUrl} class="rounded-xl bg-[#2b2e83] px-8 py-4 font-semibold text-white no-underline transition-colors hover:bg-[#232465] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b2e83]">
+          Reservar una llamada inicial
+        </a>
+        <a href="#soluciones" class="rounded-xl border-2 border-[#2b2e83] bg-white px-8 py-4 font-semibold text-[#2b2e83] no-underline transition-colors hover:bg-[#2b2e83]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b2e83]">
+          Ver soluciones
+        </a>
+      </div>
+
+      <div class="mx-auto mb-7 max-w-5xl">
+        <img
+          src="/imgs_callbrad/homepage-call-brad-pic-v2.svg"
+          alt="Equipo trabajando con el Data Protection OS de Call Brad"
+          class="h-auto w-full"
+          loading="eager"
+        />
+      </div>
+
+      <div>
+        <p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+          Integrado en las herramientas que tu equipo ya usa
+        </p>
+        <div class="flex flex-wrap items-stretch justify-center gap-4 sm:gap-5">
+          <div class="flex min-w-40 flex-col items-center justify-center gap-2 rounded-2xl border-2 border-[#2b2e83]/20 bg-white px-5 py-4 shadow-sm">
+            <img src="/imgs_callbrad/notion-logo.svg" alt="Notion" class="h-8 w-auto" loading="lazy" />
+            <span class="text-xs font-semibold text-[#2b2e83]">Disponible ahora</span>
+          </div>
+          <div class="flex min-w-40 flex-col items-center justify-center gap-2 rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm">
+            <img src="/imgs_callbrad/atlassian-logo.svg" alt="Atlassian" class="h-8 w-auto" loading="lazy" />
+            <span class="text-xs font-medium text-gray-500">Próximamente</span>
+          </div>
+          <div class="flex min-w-40 flex-col items-center justify-center gap-2 rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm">
+            <img src="/imgs_callbrad/google-logo.svg" alt="Google Workspace" class="h-8 w-auto" loading="lazy" />
+            <span class="text-xs font-medium text-gray-500">Próximamente</span>
           </div>
         </div>
-
-        <div class="grid gap-6 md:grid-cols-3">
-          <a href="/cl/data-protection-os" class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-[#2b2e83]/40 hover:shadow-md no-underline">
-            <h3 class="text-xl font-semibold text-[#2b2e83] mb-3">Data Protection OS</h3>
-            <p class="text-gray-600 leading-7">
-              Un sistema práctico para ordenar registros, responsables, proveedores, sistemas, activos, transferencias, solicitudes de derechos, brechas y revisiones periódicas.
-            </p>
-          </a>
-
-          <a href="/cl/servicios-dpo" class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-[#2b2e83]/40 hover:shadow-md no-underline">
-            <h3 class="text-xl font-semibold text-[#2b2e83] mb-3">Servicios DPO</h3>
-            <p class="text-gray-600 leading-7">
-              Acompañamiento mensual con alcance claro, apoyo experto y seguimiento operativo para que el cumplimiento avance sin interrupciones.
-            </p>
-          </a>
-
-          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 class="text-xl font-semibold text-[#2b2e83] mb-3">Formación en protección de datos</h3>
-            <p class="text-gray-600 leading-7">
-              Capacitación para equipos, diseñada para aplicarse en el trabajo diario y disponible en herramientas como Notion o Google Workspace.
-            </p>
-          </article>
-        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-        <p class="text-gray-700 text-lg leading-8">
-          Call Brad ayuda a convertir la protección de datos en un <strong class="font-semibold text-slate-900">sistema real de trabajo</strong>: claro, mantenible y preparado para auditorías, clientes y reguladores.
+  <section id="soluciones" class="scroll-mt-20 bg-white py-14 lg:py-18">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 text-center">
+        <p class="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-[#ed60ed]">Soluciones</p>
+        <h2 class="font-montserrat text-3xl font-bold text-[#2b2e83] sm:text-4xl">
+          Una estructura clara para avanzar
+        </h2>
+        <p class="mx-auto mt-3 max-w-2xl text-gray-600">
+          Elige un sistema operativo para ordenar el cumplimiento o soporte DPO mensual para mantenerlo en marcha.
         </p>
       </div>
 
-      <div class="mt-2 flex flex-col gap-4 sm:flex-row sm:justify-center">
-        <a href="/cl/contacto" class="btn-primary w-full sm:w-auto">Contacto</a>
-        <a href="/" class="btn-secondary inline-flex items-center justify-center gap-2 w-full sm:w-auto">
-          Volver a Call Brad EU <span>🇪🇺</span>
+      <div class="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+        <a href="/cl/data-protection-os" class="group rounded-3xl border-2 border-[#2b2e83]/20 bg-white p-8 no-underline transition-all hover:border-[#2b2e83] hover:shadow-xl hover:shadow-[#2b2e83]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2b2e83]">
+          <p class="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#2b2e83]/70">Notion Data Protection OS</p>
+          <p class="mb-3 font-montserrat text-3xl font-bold text-[#2b2e83]">Desde 27 UF + IVA</p>
+          <p class="mb-4 text-gray-600">
+            Registros conectados, responsables claros, revisiones periódicas y evidencia operativa en un solo lugar.
+          </p>
+          <p class="mb-5 text-sm font-medium text-gray-700">
+            Paquetes Essential, Operational y Growth de pago único.
+          </p>
+          <span class="inline-flex items-center font-semibold text-[#2b2e83] group-hover:underline">
+            Ver paquetes de Data Protection OS
+          </span>
+        </a>
+
+        <a href="/cl/servicios-dpo" class="group rounded-3xl border-2 border-[#ed60ed]/25 bg-white p-8 no-underline transition-all hover:border-[#ed60ed] hover:shadow-xl hover:shadow-[#ed60ed]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2b2e83]">
+          <p class="mb-3 text-xs font-semibold uppercase tracking-[0.16em] text-[#ed60ed]">Servicios DPO</p>
+          <p class="mb-3 font-montserrat text-3xl font-bold text-[#2b2e83]">Desde 5 UF/mes + IVA</p>
+          <p class="mb-4 text-gray-600">
+            Soporte mensual práctico con precios fijos, alcance visible y seguimiento para que el cumplimiento siga avanzando.
+          </p>
+          <p class="mb-5 text-sm font-medium text-gray-700">
+            Paquetes Essential, Operational y Growth.
+          </p>
+          <span class="inline-flex items-center font-semibold text-[#2b2e83] group-hover:underline">
+            Ver paquetes de servicios DPO
+          </span>
         </a>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section class="bg-gray-50 py-14 lg:py-18">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto mb-10 max-w-3xl text-center">
+        <p class="mb-3 text-xs font-bold uppercase tracking-[0.18em] text-[#ed60ed]">La nueva ley</p>
+        <h2 class="font-montserrat text-3xl font-bold text-[#2b2e83] sm:text-4xl">
+          El momento de prepararse es ahora
+        </h2>
+        <p class="mt-3 text-gray-600">
+          La Ley N° 21.719 entra en vigencia el 1 de diciembre de 2026. Prepararse requiere más que documentos sueltos: exige responsables, registros y una forma sostenible de trabajar.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-3xl bg-white p-8 shadow-sm">
+          <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-[#2b2e83] font-bold text-white">01</div>
+          <h3 class="mb-3 font-montserrat text-xl font-bold text-[#2b2e83]">Más derechos para los titulares</h3>
+          <p class="text-sm leading-relaxed text-gray-600">
+            Los equipos necesitan procesos claros para reconocer, gestionar y demostrar la atención de solicitudes.
+          </p>
+        </article>
+        <article class="rounded-3xl bg-white p-8 shadow-sm">
+          <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-[#2b2e83] font-bold text-white">02</div>
+          <h3 class="mb-3 font-montserrat text-xl font-bold text-[#2b2e83]">Responsabilidad demostrable</h3>
+          <p class="text-sm leading-relaxed text-gray-600">
+            Las decisiones, evaluaciones y medidas de cumplimiento deben quedar conectadas con responsables y evidencia.
+          </p>
+        </article>
+        <article class="rounded-3xl bg-white p-8 shadow-sm">
+          <div class="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-[#2b2e83] font-bold text-white">03</div>
+          <h3 class="mb-3 font-montserrat text-xl font-bold text-[#2b2e83]">Una nueva autoridad de control</h3>
+          <p class="text-sm leading-relaxed text-gray-600">
+            La Agencia de Protección de Datos Personales fiscalizará el cumplimiento de la ley chilena.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-14 lg:py-18">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-2 lg:items-stretch">
+        <div class="flex flex-col rounded-3xl bg-[#2b2e83] p-8 text-white lg:p-10">
+          <p class="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-white/70">Call Brad Chile</p>
+          <h2 class="font-montserrat text-3xl font-bold leading-tight">
+            Conocimiento local 🇨🇱 y experiencia europea 🇪🇺
+          </h2>
+          <p class="mt-5 leading-relaxed text-white/80">
+            Combinamos conocimiento de la normativa chilena con experiencia práctica en sistemas de cumplimiento y protección de datos desarrollada en Europa.
+          </p>
+          <p class="mt-auto border-t border-white/20 pt-6 text-sm font-semibold text-white lg:mt-8">
+            Servicios en Chile prestados por GETXO ASESORÍAS SpA
+          </p>
+        </div>
+
+        <div class="flex flex-col rounded-3xl border border-gray-200 bg-gray-50 p-8 shadow-sm lg:p-10">
+          <p class="font-montserrat text-2xl font-bold text-[#2b2e83]">
+            Contamos con profesionales con credenciales IAPP
+          </p>
+          <p class="mt-5 font-semibold leading-relaxed text-[#2b2e83]">
+            Profesionales formados en algunas de las mejores universidades de Chile y especializados en protección de datos en Europa.
+          </p>
+          <p class="mt-3 leading-relaxed text-gray-600">
+            Experiencia jurídica, regulatoria y tecnológica para convertir las obligaciones de privacidad en una estructura que los equipos puedan operar.
+          </p>
+          <div class="mt-auto flex flex-wrap items-center gap-3 pt-8">
+            <img src="/imgs_callbrad/cipp2.png" alt="Credencial CIPP/E" class="h-12 w-auto" loading="lazy" />
+            <img src="/imgs_callbrad/cipp3.png" alt="Credencial CIPP/US" class="h-12 w-auto" loading="lazy" />
+            <img src="/imgs_callbrad/cipt.png" alt="Credencial CIPT" class="h-12 w-auto" loading="lazy" />
+            <img src="/imgs_callbrad/cipm.png" alt="Credencial CIPM" class="h-12 w-auto" loading="lazy" />
+            <img src="/imgs_callbrad/fip.png" alt="Credencial FIP" class="h-12 w-auto" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-14 lg:py-18">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10 text-center">
+        <h2 class="mb-3 font-montserrat text-3xl font-bold text-[#2b2e83] sm:text-4xl">Por qué Call Brad</h2>
+        <p class="mx-auto max-w-2xl text-gray-600">
+          Un punto medio entre planillas y documentos aislados, software pesado y asesoría difícil de aterrizar.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="rounded-3xl bg-gray-50 p-8">
+          <h3 class="mb-3 font-montserrat text-xl font-bold text-[#2b2e83]">Más útil que una carpeta de documentos</h3>
+          <p class="text-sm leading-relaxed text-gray-600">
+            Registros conectados, responsables definidos y seguimiento real en lugar de plantillas que quedan guardadas.
+          </p>
+        </article>
+        <article class="rounded-3xl bg-gray-50 p-8">
+          <h3 class="mb-3 font-montserrat text-xl font-bold text-[#2b2e83]">Más liviano que un software empresarial</h3>
+          <p class="text-sm leading-relaxed text-gray-600">
+            Parte con la estructura que tu equipo necesita ahora, dentro de herramientas conocidas y sin una implementación interminable.
+          </p>
+        </article>
+        <article class="rounded-3xl bg-gray-50 p-8">
+          <h3 class="mb-3 font-montserrat text-xl font-bold text-[#2b2e83]">Soporte DPO con alcance claro</h3>
+          <p class="text-sm leading-relaxed text-gray-600">
+            Paquetes, horas, servicios adicionales y tiempos de respuesta visibles antes de contratar.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-b from-gray-50 to-white py-14 lg:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="mb-4 font-montserrat text-3xl font-bold text-[#2b2e83] sm:text-4xl">
+        Empieza a preparar tu operación
+      </h2>
+      <p class="mx-auto mb-8 max-w-2xl text-lg text-gray-600">
+        Revisa el Data Protection OS, los servicios DPO o conversemos sobre la estructura que necesita tu equipo.
+      </p>
+      <div class="flex flex-col justify-center gap-4 sm:flex-row">
+        <a href="/cl/data-protection-os" class="rounded-xl bg-[#2b2e83] px-7 py-4 font-semibold text-white no-underline transition-colors hover:bg-[#232465] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b2e83]">
+          Ver Data Protection OS
+        </a>
+        <a href={bookingUrl} class="rounded-xl border-2 border-[#2b2e83] bg-white px-7 py-4 font-semibold text-[#2b2e83] no-underline transition-colors hover:bg-[#2b2e83]/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2b2e83]">
+          Reservar una llamada
+        </a>
+      </div>
+    </div>
+  </section>
 </Layout>

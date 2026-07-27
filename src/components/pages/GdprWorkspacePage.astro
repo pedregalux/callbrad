@@ -11,7 +11,7 @@ interface Props {
 const { locale = 'en' } = Astro.props;
 const isEsCl = locale === 'es-CL';
 const packages = isEsCl ? workspaceDetailedPackagesEsCl : workspaceDetailedPackages;
-const taxLabel = isEsCl ? 'CLP + IVA' : '+ VAT';
+const taxLabel = isEsCl ? '+ IVA' : '+ VAT';
 const t = (value: string) => (isEsCl ? gdprWorkspaceCopyEsCl[value] ?? value : value);
 ---
 

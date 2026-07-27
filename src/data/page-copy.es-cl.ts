@@ -1,6 +1,6 @@
 export const gdprWorkspaceCopyEsCl: Record<string, string> = {
   'A practical GDPR tool that your team will actually use':
-    'Una herramienta práctica para cumplir la Ley N° 21.719 que tu equipo realmente va a usar',
+    'La nueva Ley de Datos Personales, en acción',
   'Call Brad helps teams get lean by moving GDPR out of disconnected documents and into a practical and interconnected operating setup.':
     'Call Brad ayuda a los equipos a trabajar de forma más ágil, trasladando el cumplimiento de la Ley N° 21.719 desde documentos desconectados a una configuración operativa práctica e interconectada.',
   'Made for Notion Data Protection OS preview':
@@ -79,7 +79,7 @@ export const dpoCopyEsCl: Record<string, string> = {
   'Package-based DPO support for lean teams, with clear pricing, defined scope, and practical ongoing support.':
     'Soporte DPO por paquetes para equipos ágiles, con precios claros, alcance definido y acompañamiento práctico continuo.',
   'All our professionals have IAPP credentials.':
-    'Todos nuestros profesionales cuentan con credenciales IAPP.',
+    'Contamos con profesionales con credenciales IAPP.',
   'See packages': 'Ver paquetes',
   'Book an intro call': 'Reservar una llamada inicial',
   'Choose the right DPO package': 'Elige el paquete DPO adecuado',
@@ -93,7 +93,7 @@ export const dpoCopyEsCl: Record<string, string> = {
   'A designated support structure with visible scope and fixed package pricing':
     'Una estructura de soporte designada, con alcance visible y precios fijos por paquete',
   'Practical monthly support that sits alongside the Data Protection OS and training offers':
-    'Soporte mensual práctico que complementa el Data Protection OS y las ofertas de capacitación',
+    'Soporte mensual práctico que complementa el Data Protection OS',
   'IAPP-backed credibility from certified privacy professionals':
     'Respaldo IAPP de profesionales certificados en privacidad',
   'How it pairs with the Data Protection OS':
@@ -110,6 +110,11 @@ export const dpoCopyEsCl: Record<string, string> = {
   'When you buy the Data Protection OS, DPO Packages can be reduced by up to 15% for the first 3 months.':
     'Al contratar el Data Protection OS, los paquetes DPO pueden tener un descuento de hasta 15 % durante los primeros 3 meses.',
   'Up to 15% off': 'Hasta 15 % de descuento',
+  'EU DPO service client discount':
+    'Descuento para clientes del servicio de DPO en la UE',
+  'Clients who purchase our EU DPO service for GDPR compliance may also receive a discount. Contact us for details.':
+    'Los clientes que contraten nuestro servicio de DPO en la UE para cumplir con los requisitos del GDPR también pueden acceder a un descuento. Contáctanos para conocer las condiciones.',
+  'Contact us for the discount': 'Consultar descuento',
   'Ready to put a more structured DPO setup in place?':
     '¿Listo para implementar una estructura DPO más ordenada?',
   'Use the existing booking link if you want to compare packages, add-ons, and Data Protection OS buyer discounts.':

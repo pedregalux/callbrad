@@ -18,7 +18,7 @@ const quickHeading = isCl ? 'Enlaces rápidos' : 'Quick Links';
 const legalHeading = isCl ? 'Avisos legales' : 'Legal';
 const privacyLabelLocal = isCl ? 'Aviso de privacidad' : 'Privacy Notice';
 const footerBlurbLocal = isCl
-  ? 'Protección de datos operativa para equipos ágiles. Cumplimiento práctico de la Ley N° 21.719, capacitación y soporte DPO sin sobrecarga de software.'
+  ? 'Protección de datos operativa para equipos ágiles. Cumplimiento práctico de la Ley N° 21.719 y soporte DPO sin sobrecarga de software.'
   : footerBlurb;
 
 const footerLabelMap: Record<string, string> = {
@@ -43,7 +43,7 @@ if (isCl) {
   localizedFooterQuickLinks = [
     { href: '/cl/data-protection-os', label: 'Data Protection OS' },
     { href: '/cl/servicios-dpo', label: 'Servicios DPO' },
-    { href: '/cl', label: 'FAQ' },
+    { href: '/cl/preguntas-frecuentes', label: 'Preguntas frecuentes' },
     { href: '/cl/contacto', label: 'Contacto' },
   ];
 }
@@ -57,14 +57,14 @@ if (isCl) {
   localizedNavLinks = [
     { href: '/cl/data-protection-os', label: 'Data Protection OS' },
     { href: '/cl/servicios-dpo', label: 'Servicios DPO' },
-    { href: '/cl', label: 'FAQ' },
+    { href: '/cl/preguntas-frecuentes', label: 'FAQ' },
   ];
 }
 
 const copyrightText = isCl ? '© 2026 Call Brad. Todos los derechos reservados.' : '© 2026 Call Brad. All rights reserved.';
 const companyDetailsPrefix = isCl ? 'Detalles de la empresa:' : 'Company details:';
 const companyDetailsLocal = isCl
-  ? 'Trauko OÜ | Servicios de cumplimiento en privacidad | IVA/identificación comercial'
+  ? 'GETXO ASESORÍAS SpA'
   : companyDetails;
 ---
 
@@ -148,7 +148,7 @@ const companyDetailsLocal = isCl
               <li><a href="/privacy" class="hover:text-white transition-colors">{privacyLabelLocal}</a></li>
             </ul>
             <a href={isCl ? '/' : '/cl'} class="mt-6 inline-flex mx-auto md:mx-0 items-center justify-center rounded-lg bg-white px-8 py-3 text-sm font-semibold text-[#2b2e83] shadow-md transition hover:bg-gray-100">
-              {isCl ? 'Volver a Call Brad EU 🇪🇺' : 'Go to Call Brad Chile 🇨🇱'}
+              {isCl ? 'Call Brad EU 🇪🇺' : 'Call Brad Chile 🇨🇱'}
             </a>
           </div>
         </div>

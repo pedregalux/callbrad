@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { bookingUrl, contactEmail } from '../../data/site';
+import {
+  dpoAddOnsEsCl,
+  dpoPackagesEsCl,
+  workspaceDetailedPackagesEsCl,
+} from '../../data/offers.es-cl';
+
+const dataProtectionOsPricing = workspaceDetailedPackagesEsCl
+  .map((pkg) => `${pkg.name} ${pkg.price}`)
+  .join(', ');
+
+const dpoPricing = dpoPackagesEsCl
+  .map((pkg) => `${pkg.name} DPO ${pkg.price}${pkg.billing} + IVA`)
+  .join(', ');
+
+const faqSections = [
+  {
+    title: 'Disponibilidad',
+    eyebrow: 'Oferta actual',
+    items: [
+      {
+        question: '¿Qué está disponible ahora?',
+        answer:
+          'El Data Protection OS para Notion y los paquetes de servicios DPO ya están disponibles.',
+      },
+      {
+        question: '¿Qué estará disponible próximamente?',
+        answer:
+          'Las versiones completas del Data Protection OS para Confluence y Google Workspace son las próximas que tenemos planificadas. Por ahora, la oferta completa del Data Protection OS está disponible únicamente en Notion.',
+      },
+      {
+        question: '¿Podemos usar las herramientas que ya tenemos?',
+        answer:
+          'Sí. La oferta está diseñada para implementar de forma práctica la ley chilena de protección de datos dentro de las herramientas que ya usan los equipos ágiles, sin agregar la sobrecarga innecesaria de un software empresarial.',
+      },
+    ],
+  },
+  {
+    title: 'Precios',
+    eyebrow: 'Paquetes y descuentos',
+    items: [
+      {
+        question: '¿Los precios ya están definidos para todos los servicios?',
+        answer:
+          `Sí. Los paquetes de Data Protection OS son ${dataProtectionOsPricing}, todos de pago único más IVA. Los paquetes DPO son ${dpoPricing}.`,
+      },
+      {
+        question: '¿Hay descuentos en los paquetes DPO?',
+        answer:
+          'Sí. Al contratar el Data Protection OS, los paquetes DPO pueden tener un descuento de hasta 15 % durante los primeros 3 meses; el descuento no se aplica a servicios adicionales. Los clientes que contraten nuestro servicio de DPO en la UE para cumplir con los requisitos del GDPR también pueden acceder a un descuento. Contáctanos para conocer las condiciones.',
+      },
+      {
+        question: '¿Qué servicios adicionales DPO están disponibles?',
+        answer:
+          dpoAddOnsEsCl.map((addon) => `${addon.name}: ${addon.price}`).join(', '),
+      },
+    ],
+  },
+  {
+    title: 'Perfil y alcance',
+    eyebrow: 'Para quién es',
+    items: [
+      {
+        question: '¿Para quién está diseñada la oferta?',
+        answer:
+          'Call Brad está diseñado para startups, empresas SaaS, fintechs, pymes y otros equipos ágiles que necesitan apoyo estructurado para cumplir la ley chilena de protección de datos, sin implementar una consultoría pesada ni software complejo.',
+      },
+      {
+        question: '¿Ya están disponibles las versiones del Data Protection OS para Confluence y Google Workspace?',
+        answer:
+          'No. El Data Protection OS completo está disponible actualmente en Notion. Las versiones completas para Confluence y Google Workspace estarán disponibles próximamente.',
+      },
+    ],
+  },
+];
+---
+
+<Layout
+  title="Preguntas frecuentes | Call Brad Chile"
+  description="Respuestas sobre el Data Protection OS, los servicios DPO y el cumplimiento de la ley chilena de protección de datos."
+  locale="cl"
+>
+  <section class="bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 lg:pt-28 lg:pb-24">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 rounded-full border border-[#2b2e83]/10 bg-[#2b2e83]/5 px-4 py-2 mb-6">
+          <span class="w-2 h-2 bg-[#ed60ed] rounded-full"></span>
+          <span class="text-sm font-semibold text-[#2b2e83]">Preguntas frecuentes</span>
+        </div>
+        <h1 class="font-montserrat text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-[#2b2e83] mb-5">
+          Respuestas claras antes de reservar una llamada
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+          Información práctica sobre disponibilidad, precios, descuentos y alcance del Data Protection OS y los servicios DPO.
+        </p>
+      </div>
+
+      <div class="mt-12 max-w-4xl mx-auto">
+        <div class="divide-y divide-gray-200 border-y border-gray-200">
+          {faqSections.map((section) => (
+            <section class="py-8">
+              <div class="mb-5 text-center">
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#ed60ed]">{section.eyebrow}</p>
+                <h2 class="mt-2 font-montserrat text-2xl font-bold text-[#2b2e83]">{section.title}</h2>
+              </div>
+
+              <div class="space-y-3">
+                {section.items.map((item) => (
+                  <details class="group rounded-2xl border border-gray-200 bg-white transition-colors open:border-[#2b2e83]/30 open:bg-[#2b2e83]/[0.03]">
+                    <summary class="flex cursor-pointer list-none items-start justify-between gap-5 px-5 py-5 [&::-webkit-details-marker]:hidden">
+                      <span class="font-montserrat text-lg font-bold leading-snug text-gray-950">{item.question}</span>
+                      <span class="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-[#2b2e83] transition-transform group-open:rotate-180">
+                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9 6 6 6-6" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <div class="px-5 pb-5 -mt-1">
+                      <p class="max-w-3xl text-base leading-relaxed text-gray-600">{item.answer}</p>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+
+        <div class="mt-12 rounded-2xl border border-gray-200 bg-gray-50 p-6 text-center sm:p-8">
+          <p class="font-montserrat text-2xl font-bold text-[#2b2e83]">¿Necesitas una respuesta específica?</p>
+          <p class="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-600">
+            Envíanos tu pregunta por correo electrónico o reserva una breve llamada inicial. Nuestra oferta está diseñada para ser ágil, por lo que podemos resolver rápidamente la mayoría de las consultas sobre alcance.
+          </p>
+          <div class="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+            <a href={bookingUrl} class="inline-flex items-center justify-center rounded-xl bg-[#2b2e83] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#232465]">
+              Reservar una llamada inicial
+            </a>
+            <a href={`mailto:${contactEmail}`} class="inline-flex items-center justify-center rounded-xl border border-[#2b2e83]/20 bg-white px-6 py-3 text-sm font-semibold text-[#2b2e83] transition-colors hover:bg-[#2b2e83]/5">
+              Escribir a Call Brad
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
