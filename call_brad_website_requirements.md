@@ -8,7 +8,7 @@ The website must make it clear that Call Brad helps startups, SaaS companies, fi
 
 - a Notion Data Protection OS available now;
 - DPO support packages;
-- GDPR employee training available in Notion and Google Workspace;
+- GDPR training for participants available in Notion, Google Workspace, and client LMS platforms;
 - RoPA / connected register setup and maintenance;
 - practical GDPR implementation inside the tools teams already use.
 
@@ -128,8 +128,8 @@ Use the following rules consistently across the site:
 ### Available now
 
 - Notion Data Protection OS
-- Employee GDPR training in Notion
-- Employee GDPR training in Google Workspace
+- GDPR training for participants in Notion
+- GDPR training for participants in Google Workspace
 - DPO support packages
 - RoPA and connected register setup
 - Custom GDPR implementation support inside existing tools
@@ -237,7 +237,7 @@ Body:
 
 Support line:
 
-> Available now in Notion. Employee GDPR training already available in Notion and Google Workspace. Full Confluence and Google Workspace workspace versions are coming soon.
+> Available now in Notion. GDPR training for participants is already available in Notion, Google Workspace, and client LMS platforms. Full Confluence and Google Workspace workspace versions are coming soon.
 
 Primary CTA:
 
@@ -279,7 +279,7 @@ Cards or bullets:
 
 - Data Protection OS setup and implementation
 - RoPA and connected register setup
-- employee GDPR training inside your existing stack
+- GDPR training for participants inside your existing stack
 - practical DPO support for lean teams
 - ongoing record maintenance and review support
 - GDPR implementation inside tools your team already uses
@@ -293,8 +293,8 @@ Heading:
 Available now:
 
 - Notion Data Protection OS
-- Employee GDPR training in Notion
-- Employee GDPR training in Google Workspace
+- GDPR training for participants in Notion
+- GDPR training for participants in Google Workspace
 - DPO support packages
 - RoPA and connected register setup
 - Custom GDPR implementation support inside existing tools
@@ -330,7 +330,7 @@ CTA: View DPO packages
 
 CTA: See how it works
 
-#### Employee GDPR training
+#### GDPR training for teams
 
 > Practical GDPR training delivered inside tools your team already uses, without adding another platform unless there is a good reason to.
 
@@ -520,7 +520,7 @@ Show as a highlighted note:
 
 Eyebrow:
 
-> Employee GDPR Training
+> GDPR Training for Teams
 
 Headline:
 
@@ -558,9 +558,10 @@ Bullets:
 
 Base pricing:
 
-- €17 per employee
-- Minimum 10 people
+- €12 per participant, calculated at the time of purchase
+- Minimum 10 participants
 - 100+ participants receive a 20% discount
+- Call Brad operational time: up to 1 hour for every 100 participants, capped at 4 hours
 
 Extras:
 
@@ -837,7 +838,7 @@ Title:
 
 Description:
 
-> Practical Data Protection OS products, DPO support and employee training for startups, SaaS companies, fintechs, SMEs and lean teams.
+> Practical Data Protection OS products, DPO support and team training for startups, SaaS companies, fintechs, SMEs and lean teams.
 
 ### Data Protection OS
 
@@ -863,7 +864,7 @@ Description:
 
 Title:
 
-> Employee GDPR Training | Call Brad
+> GDPR Training for Teams | Call Brad
 
 Description:
 
@@ -877,7 +878,7 @@ Title:
 
 Description:
 
-> Clear pricing for Data Protection OS setup, DPO support and employee GDPR training.
+> Clear pricing for Data Protection OS setup, DPO support and GDPR training for teams.
 
 ### About
 
@@ -956,7 +957,7 @@ Across all pages:
 - Refer to RoPA as part of the workspace/register setup, not as the whole offer.
 - Use “Notion Data Protection OS” when referring to the available product.
 - Use “Confluence Data Protection OS” and “Google Workspace Data Protection OS” only as coming soon.
-- Use “employee GDPR training”, not “training platform”, unless there is an actual platform.
+- Use “GDPR training for teams” or “participant-based GDPR training”, not “training platform”, unless there is an actual platform.
 - Use “DPO support”, not only “DPO appointment”.
 - Use “practical GDPR implementation”, not “tailored compliance solutions”.
 - Use “IAPP-certified privacy professionals” where credentials are mentioned.
@@ -1003,7 +1004,7 @@ The implementation is complete when:
 - The Expertise page no longer uses first-person “I” copy and is replaced by About / credibility copy.
 - DPO package prices are €300, €700 and €1,200 per month.
 - Workspace package prices are €800, €1,500 and €3,000 one-off.
-- Training price is €17 per employee, minimum 10 people, with 20% discount for 100+ participants.
+- Training price is €12 per participant at the time of purchase, minimum 10 participants, with a 20% discount for 100+ participants.
 - DPO add-ons are €150/month per extra legal entity, €100/month per extra jurisdiction, €200/hour extra support and €300/hour urgent out-of-hours support.
 - The first-year DPO discount for Workspace clients is visible: 10%, 15%, 20% by package tier.
 - IAPP credentials are visible and natural: CIPP/E, CIPP/US, CIPT, CIPM and FIP.

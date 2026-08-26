@@ -7,19 +7,19 @@ Purpose: give the developer a clear brief for rebuilding callbrad.eu as a modern
 1. Project summary
 The current website is visually clean and already uses a simple landing-page structure with sections such as expertise, about, pricing, and contact. The new website should keep that clarity, but with a much stronger commercial focus on products rather than general consultancy.
 The website should move away from Wix and be rebuilt on a platform that is cheaper, easier to maintain, and faster to update.
-The primary commercial focus should be on: (1) RoPA Collaborative System and (2) Employees GDPR Training. DPO services should remain visible and credible, but secondary.
+The primary commercial focus should be on: (1) RoPA Collaborative System and (2) GDPR Training for Teams. DPO services should remain visible and credible, but secondary.
 
 The website should feel premium, trustworthy, modern, and minimal. It does not need complex functionality.
 
 2. Main goals
 • Present the business as a product-led privacy/compliance offering, not only a consultancy.
-• Create a strong landing page that clearly explains the three offers: DPO services, RoPA Collaborative System, and Employees GDPR Training.
+• Create a strong landing page that clearly explains the three offers: DPO services, RoPA Collaborative System, and GDPR Training for Teams.
 • Make RoPA and Training the hero products while still preserving DPO credibility.
 • Allow easy future edits to product copy, package details, testimonials, and pricing.
 • Improve maintainability, performance, and cost compared with Wix.
 
 3. Target audience
-Primary audience: startups and small-to-mid-sized businesses that need practical GDPR support, a collaborative RoPA/compliance system, or employee GDPR training without enterprise-software overhead.
+Primary audience: startups and small-to-mid-sized businesses that need practical GDPR support, a collaborative RoPA/compliance system, or GDPR training for participants without enterprise-software overhead.
 
 4. Scope of work
 • Design and build a single landing page website (plus required legal pages and contact pathways).
@@ -41,9 +41,9 @@ Primary audience: startups and small-to-mid-sized businesses that need practical
 
 6. Information architecture and recommended page flow
 - Hero section: Strong headline positioning the business around practical GDPR products and services. Primary CTA should point to booking/contact. Secondary CTA can point to learning about the products.
-- Products overview: Three-card or three-block section for: RoPA Collaborative System, Employees GDPR Training, and DPO Services. RoPA and Training should be visually more prominent than DPO.
+- Products overview: Three-card or three-block section for: RoPA Collaborative System, GDPR Training for Teams, and DPO Services. RoPA and Training should be visually more prominent than DPO.
 - RoPA Collaborative System: Dedicated section explaining the collaborative/privacy-workspace angle. Leave room for the owner to refine copy, features, pricing, and screenshots later.
-- Employees GDPR Training: Dedicated section explaining the employee-training offer. Leave room for the owner to refine modules, delivery format, and pricing later.
+- GDPR Training for Teams: Dedicated section explaining the participant-based training offer. Leave room for the owner to refine modules, delivery format, and pricing later.
 - DPO Services: Dedicated section for DPO offer, including package pricing table and optional add-ons.
 - Why this approach: Short section explaining why this is more practical than bloated tools or expensive consultancy-heavy setups.
 - About / credibility: Short founder credibility section with photo, certifications, and concise trust markers.
@@ -52,7 +52,7 @@ Primary audience: startups and small-to-mid-sized businesses that need practical
 - Legal footer: Privacy Notice, company details, copyright.
 
 7. Product priority rules
-• RoPA Collaborative System and Employees GDPR Training must be the main commercial focus of the page.
+• RoPA Collaborative System and GDPR Training for Teams must be the main commercial focus of the page.
 • These two offers should receive the strongest visual weight after the hero section.
 • DPO Services should still appear as an important, serious offer, but not dominate the page.
 • The developer should structure the CMS/content blocks so the owner can later update the RoPA and Training descriptions, features, screenshots, testimonials, and pricing without major redesign.
@@ -97,8 +97,8 @@ Primary audience: startups and small-to-mid-sized businesses that need practical
 
 13. Open items still to be finalised by owner
 • Final copy and pricing for RoPA Collaborative System.
-• Final copy and pricing for Employees GDPR Training.
+• Final copy and pricing for GDPR Training for Teams.
 • Final CTA wording.
 • Decision on final platform/stack, subject to developer recommendation.
 
-Priority reminder: the new website is not meant to be a generic consultancy brochure. It should act as a strong product-led landing page in which the RoPA Collaborative System and Employees GDPR Training are the main offers, while DPO Services remain an important secondary offer.
+Priority reminder: the new website is not meant to be a generic consultancy brochure. It should act as a strong product-led landing page in which the RoPA Collaborative System and GDPR Training for Teams are the main offers, while DPO Services remain an important secondary offer.

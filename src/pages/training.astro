@@ -4,7 +4,7 @@ import { bookingUrl } from '../data/site';
 import { trainingOffer } from '../data/offers';
 ---
 
-<Layout title="GDPR Training | Call Brad" description="One-off GDPR training setup in Notion, Google Workspace, or your LMS, priced per employee at purchase.">
+<Layout title="GDPR Training | Call Brad" description="One-off GDPR training setup in Notion, Google Workspace, or your LMS, priced per participant at purchase.">
   <section class="pt-20 pb-12 lg:pt-24 lg:pb-14 bg-gradient-to-br from-[#ed60ed]/5 via-white to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
@@ -73,7 +73,7 @@ import { trainingOffer } from '../data/offers';
           Training pricing and delivery
         </h2>
         <p class="text-gray-600 max-w-3xl mx-auto">
-          A one-off employee training license and setup with no recurring license or onboarding charges. Optional future updates are charged separately.
+          A one-off team training license and setup with no recurring license or onboarding charges. Optional future updates are charged separately.
         </p>
       </div>
       <div class="overflow-x-auto">
@@ -84,7 +84,7 @@ import { trainingOffer } from '../data/offers';
                 One-off License &amp; Onboarding Fee
               </td>
               <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
-                <p>{trainingOffer.fullPrice}, based on your employee count at the time of purchase</p>
+                <p>{trainingOffer.fullPrice}, based on your participant count at the time of purchase</p>
                 <p>{trainingOffer.minimum}</p>
                 <p>{trainingOffer.bulkDiscount}</p>
                 <p class="mt-3 font-medium text-gray-900">One payment only: no recurring license or onboarding fees.</p>
@@ -161,10 +161,10 @@ import { trainingOffer } from '../data/offers';
                 Operational time commitments by Call Brad expert
               </td>
               <td class="border-l border-gray-200 px-6 py-5 text-gray-700">
-                <p class="font-semibold text-[#2b2e83]">Up to 2 hours</p>
+                <p class="font-semibold text-[#2b2e83]">Up to 1 hour for every 100 participants, capped at 4 hours</p>
                 <ul class="mt-2 space-y-2">
-                  <li>Up to 1 hour setup in Notion, Google Workspace, or your LMS</li>
-                  <li>Up to 1 hour owner walkthrough / email support</li>
+                  <li>Setup in Notion, Google Workspace, or your LMS</li>
+                  <li>Owner walkthrough / email support</li>
                 </ul>
               </td>
             </tr>
@@ -194,7 +194,7 @@ import { trainingOffer } from '../data/offers';
           </div>
           <div>
             <h3 class="font-montserrat text-lg font-bold text-gray-900 mb-2">Practical business relevance</h3>
-            <p class="text-gray-600">Clear employee GDPR training that directly applies to daily work and responsibilities.</p>
+            <p class="text-gray-600">Clear GDPR training that applies directly to each participant's daily work and responsibilities.</p>
           </div>
         </div>
         

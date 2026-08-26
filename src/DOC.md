@@ -3,7 +3,7 @@ Purpose: give the developer a working content draft for the new website. This do
 
 • 1. RoPA Collaborative System — main commercial focus
 
-• 2. Employees GDPR Training — main commercial focus
+• 2. GDPR Training for Teams — main commercial focus
 
 • 3. DPO Services — secondary, but still important and fully credible
 RoPA and Training pricing/details should stay modular because they will likely change.
@@ -12,11 +12,11 @@ RoPA and Training pricing/details should stay modular because they will likely c
 
 • Hero section: Clear positioning around practical GDPR products and support. Primary CTA: contact/book a call. Secondary CTA: explore the products.
 
-• Products overview: Three product blocks: RoPA Collaborative System, Employees GDPR Training, and DPO Services. RoPA and Training should be visually more prominent.
+• Products overview: Three product blocks: RoPA Collaborative System, GDPR Training for Teams, and DPO Services. RoPA and Training should be visually more prominent.
 
 • RoPA Collaborative System section: Core value proposition, who it is for, how it works, and room for screenshots or visual mockups.
 
-• Employees GDPR Training section: Short explanation of the training product, how it is delivered, and why it is operationally practical.
+• GDPR Training for Teams section: Short explanation of the training product, how it is delivered, and why it is operationally practical.
 
 • DPO Services section: Package-based service section with pricing table and add-ons.
 
@@ -32,7 +32,7 @@ RoPA and Training pricing/details should stay modular because they will likely c
 
 * 2.1 Hero section
 Suggested headline: Practical GDPR systems and support for teams that want to stay compliant without buying bloated enterprise tools.
-Suggested subheading: Call Brad helps businesses handle GDPR through a collaborative RoPA system, employee training, and DPO support that is clear, workable, and easy to maintain.
+Suggested subheading: Call Brad helps businesses handle GDPR through a collaborative RoPA system, team training, and DPO support that is clear, workable, and easy to maintain.
 Primary CTA label: Book a call
 Secondary CTA label: Explore the products
 
@@ -40,7 +40,7 @@ Secondary CTA label: Explore the products
 Intro line: Three practical ways to make GDPR less messy.
 Offer	Short positioning line	Status on site
 RoPA Collaborative System	A collaborative Data Protection OS for building and maintaining records, workflows, and review logic.	Primary
-Employees GDPR Training	A practical employee training product delivered directly in the client’s own workspace.	Primary
+GDPR Training for Teams	Practical training for participants, delivered directly in the client’s own workspace.	Primary
 DPO Services	Ongoing package-based support for businesses that need a designated and operationally useful DPO setup.	Secondary
 
 * 2.3 RoPA Collaborative System section
@@ -53,12 +53,12 @@ Suggested bullet points:
 • Suitable for businesses that want structure without excessive software overhead
 • Expandable as the offer evolves
 
-* 2.4 Employees GDPR Training section
+* 2.4 GDPR Training for Teams section
 Suggested section title: GDPR training that lives where your team already works
-Draft paragraph: This product gives businesses a practical way to train employees on GDPR without adding another separate training provider into the mix. The training is designed to be clear, easy to follow, and operationally useful, while still leaving room for structured learning and proof of completion.
+Draft paragraph: This product gives businesses a practical way to train participants on GDPR without adding another separate training provider into the mix. The training is designed to be clear, easy to follow, and operationally useful, while still leaving room for structured learning and proof of completion.
 Draft paragraph: The section should also remain modular because pricing, package structure, and final wording still need to be refined.
 Suggested bullet points:
-• Clear employee GDPR training with practical business relevance
+• Clear GDPR training for participants with practical business relevance
 • Designed to be easy to deliver and easy to maintain
 • Can be presented as a product rather than just an add-on service
 • Space needed for final package and pricing details
@@ -98,7 +98,7 @@ Suggested proof points to keep visible: legal background, privacy credentials, p
 
 * 2.8 Final CTA section
 Suggested headline: Need a more practical GDPR setup?
-Draft line: Whether you need a collaborative RoPA system, employee GDPR training, or ongoing DPO support, get in touch to discuss what fits best.
+Draft line: Whether you need a collaborative RoPA system, GDPR training for your team, or ongoing DPO support, get in touch to discuss what fits best.
 Suggested CTA label: Book a call
 Suggested supporting contact line: Or contact javier@callbrad.eu directly.
 
@@ -107,9 +107,9 @@ Suggested supporting contact line: Or contact javier@callbrad.eu directly.
 • RoPA features list
 • RoPA screenshots / visuals
 • RoPA pricing
-• Employees GDPR Training description
-• Employees GDPR Training package options
-• Employees GDPR Training pricing
+• GDPR Training for Teams description
+• GDPR Training for Teams package options
+• GDPR Training for Teams pricing
 • Case studies / testimonials if added later
 • Final CTA wording
 
@@ -118,7 +118,7 @@ The copy should feel premium, clear, direct, modern, and practical. It should av
 
 Notes for the developer
 • Structure the CMS or editable fields so the owner can update product copy and pricing later without redesign work.
-• Make RoPA and Employees GDPR Training more visually prominent than DPO services in the layout.
+• Make RoPA and GDPR Training for Teams more visually prominent than DPO services in the layout.
 • Keep the overall design beautiful, minimal, and conversion-focused rather than content-heavy.
 • Use the brand rules from the requirements brief: white background, emphasis colours #2b2e83 and #ed60ed, Montserrat for titles, Roboto for body text, #222222 over white, and white text over coloured backgrounds.
 

@@ -26,7 +26,7 @@ This document is the current clean website copy for the Call Brad site, separate
 
 - Eyebrow: GDPR Compliance Made Simple
 - Headline: Practical GDPR systems and support for teams that want to stay compliant without buying bloated enterprise tools
-- Body: Call Brad helps businesses handle GDPR through a collaborative RoPA system, employee training, and DPO support that is clear, workable, and easy to maintain.
+- Body: Call Brad helps businesses handle GDPR through a collaborative RoPA system, team training, and DPO support that is clear, workable, and easy to maintain.
 - Primary CTA: Book a call
 - Secondary CTA: Explore the products
 
@@ -34,7 +34,7 @@ This document is the current clean website copy for the Call Brad site, separate
 
 - Heading: Three practical ways to make GDPR less messy
 - RoPA Collaborative System: A collaborative Data Protection OS for building and maintaining records, workflows, and review logic.
-- Employees GDPR Training: A practical employee training product delivered directly in your own workspace.
+- GDPR Training for Teams: Practical training for participants, delivered directly in your own workspace.
 - DPO Services: Ongoing package-based support for businesses that need a designated and operationally useful DPO setup.
 
 ### RoPA Section
@@ -55,11 +55,11 @@ CTA: Read more
 
 - Label: Featured Product
 - Heading: GDPR training that lives where your team already works
-- Body: A practical way to train employees on GDPR without adding another separate training provider. Clear, easy to follow, and operationally useful with structured learning and proof of completion.
+- Body: A practical way to train participants on GDPR without adding another separate training provider. Clear, easy to follow, and operationally useful with structured learning and proof of completion.
 
 Key points:
 
-- Clear employee GDPR training with practical business relevance
+- Clear GDPR training for participants with practical business relevance
 - Designed to be easy to deliver and reuse in Notion, Google Workspace, or the client's LMS
 - Proof of completion for audits
 
@@ -136,7 +136,7 @@ Our free 30-minute consultation is designed to understand your needs and see if 
 ### Final Contact
 
 - Heading: Need a more practical GDPR setup?
-- Body: Whether you need a collaborative RoPA system, employee GDPR training, or ongoing DPO support, get in touch to discuss what fits best.
+- Body: Whether you need a collaborative RoPA system, GDPR training for your team, or ongoing DPO support, get in touch to discuss what fits best.
 - Contact options: Email, Book a call
 
 ## RoPA Page
@@ -174,9 +174,9 @@ Our free 30-minute consultation is designed to understand your needs and see if 
 
 ### Hero
 
-- Eyebrow: Employees GDPR Training
+- Eyebrow: GDPR Training for Teams
 - Heading: GDPR training that lives where your team already works
-- Body: A practical way to train employees on GDPR without adding another separate training provider into the mix. The training is designed to be clear, easy to follow, and operationally useful, while still leaving room for structured learning and proof of completion.
+- Body: A practical way to train participants on GDPR without adding another separate training provider into the mix. The training is designed to be clear, easy to follow, and operationally useful, while still leaving room for structured learning and proof of completion.
 - Primary CTA: Book a demo
 - Secondary CTA: Learn more
 
@@ -184,7 +184,7 @@ Our free 30-minute consultation is designed to understand your needs and see if 
 
 - Heading: Why choose our GDPR training?
 - Supporting line: Designed to be easy to deliver, easy to reuse, and operationally practical.
-- Practical business relevance: Clear employee GDPR training that directly applies to their daily work and responsibilities.
+- Practical business relevance: Clear GDPR training that directly applies to each participant's daily work and responsibilities.
 - Easy to deliver and reuse: Set up once in Notion, Google Workspace, or the client's LMS and reuse without a recurring license fee. Future updates are excluded and offered separately, where available or requested.
 - Product, not just an add-on: Presented as a standalone product with clear value, not a vague consultancy add-on.
 - Proof of completion: Structured learning with documentation that demonstrates compliance for audits.
@@ -192,7 +192,7 @@ Our free 30-minute consultation is designed to understand your needs and see if 
 ### Training Modules
 
 - Heading: Training modules
-- Supporting line: Comprehensive coverage of essential GDPR topics for all employees.
+- Supporting line: Comprehensive coverage of essential GDPR topics for all participants.
 - Data Protection Basics: Understanding personal data, data subjects, and fundamental privacy principles.
 - Rights & Requests: How to handle data subject access requests and other rights efficiently.
 - Data Handling: Best practices for collecting, storing, and processing personal data securely.
@@ -288,7 +288,7 @@ Our free 30-minute consultation is designed to understand your needs and see if 
 - Data Processing Agreements: My expertise includes drafting and reviewing Data Processing Agreements to meet stringent data protection standards. I ensure these agreements safeguard your business and comply with legal requirements.
 - EU and US Privacy Laws: I have extensive knowledge of both EU and US Privacy Laws, including GDPR and CCPA. My expertise ensures your business remains compliant across jurisdictions, providing comprehensive support for international data protection needs.
 - DPIAs and Data Transfers: I can conduct Data Protection Impact Assessments and assess data transfer mechanisms to ensure they comply with GDPR and other international data protection regulations. I can help mitigate privacy risks and maintain compliance.
-- Employee Training: I offer comprehensive training sessions to educate your staff on data protection practices and compliance requirements. I try to empower employees with the knowledge needed to handle personal data responsibly.
+- Team Training: I offer comprehensive training sessions to educate participants on data protection practices and compliance requirements. I aim to give every participant the knowledge needed to handle personal data responsibly.
 
 ### CTA
 

@@ -262,9 +262,9 @@ export const workspaceBuyerDpoDiscounts = [
 ] as const;
 
 export const trainingOffer = {
-  price: '€12/employee + VAT',
-  fullPrice: '€12 per employee + VAT',
-  minimum: 'Minimum 10 people',
+  price: '€12/participant + VAT',
+  fullPrice: '€12 per participant + VAT',
+  minimum: 'Minimum 10 participants',
   bulkDiscount: '20% discount for 100+ participants',
   bestFor: 'Best for team rollouts',
 } as const;
