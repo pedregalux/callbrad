@@ -60,7 +60,7 @@ CTA: Read more
 Key points:
 
 - Clear employee GDPR training with practical business relevance
-- Designed to be easy to deliver and easy to maintain
+- Designed to be easy to deliver and reuse in Notion, Google Workspace, or the client's LMS
 - Proof of completion for audits
 
 CTA: Read more
@@ -183,9 +183,9 @@ Our free 30-minute consultation is designed to understand your needs and see if 
 ### Features
 
 - Heading: Why choose our GDPR training?
-- Supporting line: Designed to be easy to deliver, easy to maintain, and operationally practical.
+- Supporting line: Designed to be easy to deliver, easy to reuse, and operationally practical.
 - Practical business relevance: Clear employee GDPR training that directly applies to their daily work and responsibilities.
-- Easy to deliver & maintain: No need for separate training platforms. Everything integrates with your existing workflow.
+- Easy to deliver and reuse: Set up once in Notion, Google Workspace, or the client's LMS and reuse without a recurring license fee. Future updates are excluded and offered separately, where available or requested.
 - Product, not just an add-on: Presented as a standalone product with clear value, not a vague consultancy add-on.
 - Proof of completion: Structured learning with documentation that demonstrates compliance for audits.
 

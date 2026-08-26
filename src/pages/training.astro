@@ -4,7 +4,7 @@ import { bookingUrl } from '../data/site';
 import { trainingOffer } from '../data/offers';
 ---
 
-<Layout title="GDPR Training | Call Brad" description="GDPR training available now in Notion and Google Workspace, priced per employee.">
+<Layout title="GDPR Training | Call Brad" description="One-off GDPR training setup in Notion, Google Workspace, or your LMS, priced per employee at purchase.">
   <section class="pt-20 pb-12 lg:pt-24 lg:pb-14 bg-gradient-to-br from-[#ed60ed]/5 via-white to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-4xl mx-auto text-center">
@@ -16,7 +16,7 @@ import { trainingOffer } from '../data/offers';
           GDPR training that lives where your team already works
         </h1>
         <p class="text-lg sm:text-xl text-gray-600 mb-6 max-w-3xl mx-auto">
-          You pay once, add it to the tools your team already uses, and reuse it as needed. No other expensive platform or subscription.
+          Pay a one-off license and onboarding fee, add the training to the tools your team already uses, and reuse it without recurring charges. Optional future updates are quoted separately.
         </p>
         <div class="mx-auto mb-7 aspect-video max-w-2xl overflow-hidden rounded-2xl bg-gray-900 shadow-sm">
           <iframe
@@ -40,6 +40,9 @@ import { trainingOffer } from '../data/offers';
                 class="h-8 w-auto"
                 loading="lazy"
               />
+            </div>
+            <div class="flex min-h-16 items-center justify-center rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm">
+              <span class="font-montserrat text-base font-bold text-[#2b2e83]">Your LMS</span>
             </div>
             <div class="flex items-center justify-center rounded-2xl border border-gray-200 bg-white px-5 py-4 shadow-sm">
               <img
@@ -70,7 +73,7 @@ import { trainingOffer } from '../data/offers';
           Training pricing and delivery
         </h2>
         <p class="text-gray-600 max-w-3xl mx-auto">
-          A one-off employee training product with clear onboarding, support, extras, and rollout effort.
+          A one-off employee training license and setup with no recurring license or onboarding charges. Optional future updates are charged separately.
         </p>
       </div>
       <div class="overflow-x-auto">
@@ -81,9 +84,10 @@ import { trainingOffer } from '../data/offers';
                 One-off License &amp; Onboarding Fee
               </td>
               <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
-                <p>{trainingOffer.fullPrice} (existing + new employee)</p>
+                <p>{trainingOffer.fullPrice}, based on your employee count at the time of purchase</p>
                 <p>{trainingOffer.minimum}</p>
                 <p>{trainingOffer.bulkDiscount}</p>
+                <p class="mt-3 font-medium text-gray-900">One payment only: no recurring license or onboarding fees.</p>
               </td>
             </tr>
             <tr>
@@ -105,11 +109,19 @@ import { trainingOffer } from '../data/offers';
               <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
                 <p>30 mins quick start &amp; customisation with expert</p>
                 <ul class="mt-2 space-y-2">
-                  <li>Setup in your environment in Notion or Google Workspace</li>
+                  <li>One-off setup in your environment in Notion, Google Workspace, or your LMS</li>
                   <li>Short owner walkthrough</li>
                   <li>Team introduction email template</li>
                   <li>Basic launch guidance</li>
                 </ul>
+              </td>
+            </tr>
+            <tr>
+              <td class="border-b border-gray-200 bg-gray-50 px-6 py-5 font-semibold text-gray-900">
+                Future updates
+              </td>
+              <td class="border-b border-l border-gray-200 px-6 py-5 text-gray-700">
+                Updates are not included in the one-off setup. Where updates are available or requested, they will be offered and charged separately.
               </td>
             </tr>
             <tr>
@@ -157,10 +169,10 @@ import { trainingOffer } from '../data/offers';
                 Operational time commitments by Call Brad expert
               </td>
               <td class="border-l border-gray-200 px-6 py-5 text-gray-700">
-                <p class="font-semibold text-[#2b2e83]">Up to 1 hour</p>
+                <p class="font-semibold text-[#2b2e83]">Up to 2 hours</p>
                 <ul class="mt-2 space-y-2">
-                  <li>30 mins setup in Notion/Google</li>
-                  <li>30 mins owner walkthrough / email support</li>
+                  <li>Up to 1 hour setup in Notion, Google Workspace, or your LMS</li>
+                  <li>Up to 1 hour owner walkthrough / email support</li>
                 </ul>
               </td>
             </tr>
@@ -177,7 +189,7 @@ import { trainingOffer } from '../data/offers';
           Why teams choose this training
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          Designed to be easy to deliver, easy to maintain, and practical inside real team workflows.
+          Designed to be easy to deliver, easy to reuse, and practical inside real team workflows.
         </p>
       </div>
       
@@ -201,8 +213,8 @@ import { trainingOffer } from '../data/offers';
             </svg>
           </div>
           <div>
-            <h3 class="font-montserrat text-lg font-bold text-gray-900 mb-2">Easy to deliver & maintain</h3>
-            <p class="text-gray-600">Available now in Notion and Google Workspace, so rollout can stay closer to tools your team already uses.</p>
+            <h3 class="font-montserrat text-lg font-bold text-gray-900 mb-2">Easy to deliver</h3>
+            <p class="text-gray-600">Available now in Notion, Google Workspace, or your LMS, so rollout can stay close to tools your team already uses.</p>
           </div>
         </div>
         
@@ -279,7 +291,7 @@ import { trainingOffer } from '../data/offers';
         Train your team effectively
       </h2>
       <p class="text-lg text-gray-600 mb-8">
-        Use the existing booking link if you want to discuss team size, rollout timing, and whether Notion or Google Workspace is the better fit.
+        Use the existing booking link to discuss team size, rollout timing, and whether Notion, Google Workspace, or your LMS is the best fit.
       </p>
       <a href={bookingUrl} class="px-8 py-4 bg-[#ed60ed] text-white font-semibold rounded-xl hover:bg-[#d94dd9] transition-all hover:shadow-lg hover:shadow-[#ed60ed]/25">
         Book an intro call

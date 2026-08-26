@@ -262,8 +262,8 @@ export const workspaceBuyerDpoDiscounts = [
 ] as const;
 
 export const trainingOffer = {
-  price: '€17/employee + VAT',
-  fullPrice: '€17 per employee + VAT',
+  price: '€12/employee + VAT',
+  fullPrice: '€12 per employee + VAT',
   minimum: 'Minimum 10 people',
   bulkDiscount: '20% discount for 100+ participants',
   bestFor: 'Best for team rollouts',
@@ -285,6 +285,7 @@ export const trainingExtras = [
 export const trainingDeliveryFormats = [
   { name: 'Notion', status: 'Available now' },
   { name: 'Google Workspace', status: 'Available now' },
+  { name: 'Your LMS', status: 'Available now' },
 ] as const;
 
 export const trainingModules = [
