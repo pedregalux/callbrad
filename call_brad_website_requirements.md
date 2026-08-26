@@ -564,7 +564,6 @@ Base pricing:
 
 Extras:
 
-- customisation for separate teams: €100 per team
 - immediate implementation: €300
 - custom videos and quiz sections: €250 per topic
 

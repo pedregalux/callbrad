@@ -277,7 +277,6 @@ export const trainingIncluded = [
 ] as const;
 
 export const trainingExtras = [
-  { name: 'Separate team customisation', price: '€100/team + VAT' },
   { name: 'Immediate implementation', price: '€300 + VAT' },
   { name: 'Custom videos/quiz sections', price: '€250/topic + VAT' },
 ] as const;
